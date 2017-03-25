@@ -1,0 +1,54 @@
+.footer {
+	padding-top: 60px;
+	padding-bottom: 30px;
+
+	&__txt {
+		font-size: @fz;
+		line-height: 1.786em;
+	}
+
+	&__address-title {
+		font-size: @fz;
+		text-transform: uppercase;
+	}
+
+	&__address-tel {
+
+		padding-left: 30px;
+		font-size: @fz;
+		position: relative;
+		&:before {
+			position: absolute;
+			display: inline-block;
+			content: '';
+
+			width: 15px;
+			height: 20px;
+			left: 7px;
+			top: 7px;
+
+			background-image: url(../../img/geo_point.png);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			color: @pink;
+		}
+	}
+
+	&__time-mail {
+		margin-top: 20px;
+	}
+
+	&__mail {
+		color: @white;
+		text-decoration: underline;
+	}
+
+	&__socials-item {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	&__copyright {
+		margin-top: 60px;
+	}
+}

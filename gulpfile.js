@@ -64,7 +64,7 @@ gulp.task('img', function () {
 // ЗАДАЧА: Оптимизация изображений (ЗАДАЧА ЗАПУСКАЕТСЯ ТОЛЬКО ВРУЧНУЮ)
 gulp.task('img:opt', function () {
   return gulp.src([
-      dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',        // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
+      dirs.source + 'img/*.{gif,png,jpg,jpeg,svg}',        // какие файлы обрабатывать (путь из константы, маска имени, много расширений)
       '!' + dirs.source + '/img/sprite-svg.svg',            // SVG-спрайт брать в обработку не будем
     ])
     .pipe(imagemin({                                        // оптимизируем
@@ -180,7 +180,11 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
     server: dirs.build,                                     // папка, которая будет «корнем» сервера (путь из константы)
     port: 3000,                                             // порт, на котором будет работать сервер
-    startPath: 'index.html',                                // файл, который буде открываться в браузере при старте сервера
+    startPath: 'index.html',
+    // startPath: 'catalog-home.html',
+    // startPath: 'face-care.html',
+    // startPath: 'product-page.html',
+    // startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });
 

@@ -5415,20 +5415,49 @@ a {
 }
 .header {
   color: #456e72;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.header__inner {
-  padding: 0 20px;
+.header__main-logo {
+  position: relative;
+}
+.header__main-logo-txt {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+.header__contact-box {
+  position: relative;
+}
+.header__contact-box:before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  top: 3px;
+  background-image: url(../../img/geo_point.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  fill: #fc7279;
 }
 .header__contact-tel {
   font-weight: bold;
 }
-.topnav {
+.header__mail {
+  text-decoration: underline;
+  color: #456e72;
+}
+.topnav__inner {
   background-color: #48b79f;
-  margin: 0 15px;
+}
+.topnav__list {
+  wrap: no-wrap;
 }
 .topnav__link {
   display: inline-block;
-  padding: 0 13px;
+  padding: 0 0px;
   font-size: 15px;
   line-height: 43px;
   text-transform: uppercase;
@@ -5436,25 +5465,33 @@ a {
 .topnav__link a {
   color: #fff;
 }
+.topnav__link a:hover {
+  text-decoration: none;
+}
 .topnav__link:hover {
   background-color: #456e72;
 }
-.sidebar-main__inner {
-  margin: 0 15px;
+.sidebar-main {
+  margin-top: 20px;
 }
 .sidebar-main__list {
   background-color: #c7e8e0;
   color: #456e72;
+  margin-bottom: 30px;
 }
 .sidebar-main__link {
   padding: 15px 0;
   border-bottom: 1px solid white;
 }
 .sidebar-main__link a {
-  color: #48b79f;
+  color: #456e72;
+}
+.sidebar-main__link a:hover {
+  text-decoration: none;
 }
 .sidebar-main__link a:active {
   color: #fc7279;
+  text-decoration: none;
 }
 .sidebar-main__link:last-child {
   border-bottom: none;
@@ -5462,9 +5499,90 @@ a {
 .sidebar-main__txt {
   padding: 0 15px;
   color: #456e72;
+  margin-bottom: 17px;
+}
+.sidebar-main__socials-list {
+  padding-left: 15px;
 }
 .sidebar-main__socials-item {
   display: inline-block;
+  margin-right: 10px;
+}
+.consalt {
+  background-color: #fc7279;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.footer__txt {
+  font-size: 14px;
+  line-height: 1.786em;
+}
+.footer__address-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.footer__address-tel {
+  padding-left: 30px;
+  font-size: 14px;
+  position: relative;
+}
+.footer__address-tel:before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 20px;
+  left: 7px;
+  top: 7px;
+  background-image: url(../../img/geo_point.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fc7279;
+}
+.footer__time-mail {
+  margin-top: 20px;
+}
+.footer__mail {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer__socials-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer__copyright {
+  margin-top: 60px;
+}
+.cards {
+  padding-bottom: 300px;
+}
+.cards__title {
+  margin-top: 90px;
+  padding-bottom: 25px;
+}
+.cards__txt {
+  font-size: 14px;
+  line-height: 1.714em;
+}
+.card__item {
+  background-color: #fff;
+  border: 1px solid red;
+  margin-bottom: 30px;
+}
+.card__item-img-box img {
+  width: 100%;
+}
+.card__item-txt {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.714em;
 }
 @media (min-width: 768px) {
   .lead {

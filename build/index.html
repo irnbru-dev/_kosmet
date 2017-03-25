@@ -3,23 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kosmet</title>
-	<link rel="stylesheet" href="less/global.less">
-	<link rel="stylesheet" href="less/style.less">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="less/variables.less">
 </head>
 <body>
 
 <header class="header">
-	<div class="header__inner row">
+	<div class="header__inner container">
+		<div class="row">
 		
-		<div class="header__main-logo col-md-3">
-			<img src="#" alt="Kosmet-LOGO">
+		<div class="header__main-logo col-md-4">
+			<a href="#"><img src="img/main-logo.png" alt="Kosmet-LOGO"></a>
 			<p class="header__main-logo-txt">Центр Медицинской Косметологии</p>
 		</div>
 
 		<div class="header__contacts">
-			<div class="header__contact-box col-md-3">
+			<div class="header__contact-box col-md-2">
 				<p class="header__contact-address">ул. Рубинштейна, д.26</p>
 				<p class="header__contact-tel">тел. +7(812) 314-78-32</p>
 			</div>
@@ -31,15 +29,17 @@
 
 			<div class="header__time-mail col-md-3">
 				<p>пн-пт 9:00-21:00, сб 10:00-20:00</p>
-				<p>kosmet@kosmet.ru</p>
+				<a class="header__mail" href="#">kosmet@kosmet.ru</a>
 			</div>
 		</div>
 
 	</div>
+	</div>
 </header>
 
 <section class="topnav">
-	<div class="topnav__inner">
+	<div class="topnav__inner container">
+		<!-- <div class="row"> -->
 		<nav class="topnav__nav">
 			<ul class="topnav__list">
 				<li class="topnav__link"><a href="#">О нас</a></li>
@@ -52,6 +52,7 @@
 				<li class="topnav__link"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
+		<!-- </div> -->
 	</div>
 </section>
 
@@ -62,106 +63,124 @@
 </section>
 
 	
-<section>
-	<div class="sidebar-main-main">
-		<div class="sidebar-main__inner row">
-			<div class="col-md-3">
-				<ul class="sidebar-main__list">
-					<li class="sidebar-main__link"><a href="#">Подарочный сертификат</a></li>
-					<li class="sidebar-main__link"><a href="#">Цены на услуги</a></li>
-					<li class="sidebar-main__link"><a href="#">Проблемы и решения</a></li>
-					<li class="sidebar-main__link"><a href="#">Наши специалисты</a></li>
-					<li class="sidebar-main__link"><a href="#">Задать вопрос специалисту</a></li>
-					<li class="sidebar-main__link"><a href="#">Профессионалам</a></li>
-					<li class="sidebar-main__link"><a href="#">Наши статьи</a></li>
-				</ul>
+<section class="sidebar-main">
+	<div class="sidebar-main__inner container">
+		<div class="row">
+ 
+		<div class="col-md-3">
+			<ul class="sidebar-main__list">
+				<li class="sidebar-main__link"><a href="#">Подарочный сертификат</a></li>
+				<li class="sidebar-main__link"><a href="#">Цены на услуги</a></li>
+				<li class="sidebar-main__link"><a href="#">Проблемы и решения</a></li>
+				<li class="sidebar-main__link"><a href="#">Наши специалисты</a></li>
+				<li class="sidebar-main__link"><a href="#">Задать вопрос специалисту</a></li>
+				<li class="sidebar-main__link"><a href="#">Профессионалам</a></li>
+				<li class="sidebar-main__link"><a href="#">Наши статьи</a></li>
+			</ul>
 	
-				<p class="sidebar-main__txt">Подписывайтесь на нас в социальных сетях. Узнавайте первыми о новинках и акциях.</p>
-				<div class="sidebar-main__socials">
-					<ul class="sidebar-main__socials-list">
-						<li class="sidebar-main__socials-item sidebar-main__socials-item--vk"><img src="#" alt="vk"></li>
-						<li class="sidebar-main__socials-item sidebar-main__socials-item--fb"><img src="#" alt="fb"></li>
-						<li class="sidebar-main__socials-item sidebar-main__socials-item--insta"><img src="#" alt="insta"></li>
-					</ul>
-				</div>
+			<p class="sidebar-main__txt">Подписывайтесь на нас в социальных сетях. Узнавайте первыми о новинках и акциях.</p>
+
+			<div class="sidebar-main__socials-list">
+				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--vk">
+					<img src="img/vk.png" alt="vk">
+				</a>
+				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--fb">
+					<img src="img/facebook.png" alt="fb">
+				</a>
+				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--insta">
+					<img src="img/instagram.png" alt="insta">
+				</a>
 			</div>
 		</div>
+
+
+		<section class="cards col-md-9">
+			<div class="row">
+				<div class="card__item col-md-4">
+					<img src="img/pic-face.jpg" alt="lazer">
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+				<div class="card__item col-md-4">
+					<img src="img/pic-girl.jpg" alt="lazer">
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+				<div class="card__item col-md-4">
+					<div class="card__item-img-box">
+						<img src="img/pic-woman.jpg" alt="lazer">
+					</div>
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="card__item col-md-4">
+					<img src="img/pic-face.jpg" alt="lazer">
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+				<div class="card__item col-md-4">
+					<img src="img/pic-girl.jpg" alt="lazer">
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+				<div class="card__item col-md-4">
+					<img src="img/pic-woman.jpg" alt="lazer">
+					<p class="card__item-txt">Двухрежимный лазер Spectra в KOSMET на Рубинштейна</p>
+				</div>
+			</div>
+		
+
+		<button class="consalt">Записаться на прием</button>
+
+		<h2 class="cards__title">Добро пожаловать в КОСМЕТ</h2>
+		<p class="cards__txt">Позвольте пригласить вас в "Космет" - один из самых современных косметологических центров нашего города. Мы рады предложить вам такие, уже ставшие традиционными,  процедуры, как мезотерапия и контурная пластика, аппаратные методики омоложения и коррекции фигуры, ботокс, а также новинки: мезонити 3D, плазмолифтинг и многое другое. Квалифицированные врачи подберут вам домашний уход профессиональной косметики Holy Land, Klapp, Terme di Saturnia. Наш основной принцип работы  - индивидуальный подход и внимание каждому клиенту. <br>Мы всегда рады видеть вас!</p>
+
+		
 	</div>
-
-	<section class="cards col-md-9">
-		<div class="row">
-		<div class="col-md-3">
-		<div class="card__item">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		<div class="card__item col-md-3">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		<div class="card__item col-md-3">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		</div>
-
-		<div class="row">
-		<div class="card__item col-md-3">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		<div class="card__item col-md-3">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		<div class="card__item col-md-3">
-			<img src="#" alt="">
-			<p class="card__item-txt"></p>
-		</div>
-		</div>
-	</section>
-
-	<button class="consalt">Записаться на прием</button>
-
-	<h2 class="cards__title">Добро пожаловать в КОСМЕТ</h2>
-	<p class="cards__txt">Позвольте пригласить вас в "Космет" - один из самых современных косметологических центров нашего города. Мы рады предложить вам такие, уже ставшие традиционными,  процедуры, как мезотерапия и контурная пластика, аппаратные методики омоложения и коррекции фигуры, ботокс, а также новинки: мезонити 3D, плазмолифтинг и многое другое. Квалифицированные врачи подберут вам домашний уход профессиональной косметики Holy Land, Klapp, Terme di Saturnia. Наш основной принцип работы  - индивидуальный подход и внимание каждому клиенту. 
-	Мы всегда рады видеть вас!</p>
+</section>
 </section>
 
 <footer class="footer">
-	<div class="footer__inner">
+	<div class="footer__inner container">
 		<div class="row">
 
-			<p class="footer__txt">Вся информация на сайте представлена в ознакомительных целях и не является публичной офертой. Для уточенения информации обращайтесь по телефонам в разделе контакты. Копирование информации запрещено</p>
+			<p class="footer__txt col-md-5">Вся информация на сайте представлена в ознакомительных целях и не является публичной офертой. Для уточенения информации обращайтесь по телефонам в разделе контакты. Копирование информации запрещено</p>
 
-			<div class="footer__contacts">
-				<h3 class="footer__address-title">Мы ждем вас в наших салонах:</h3>
+			<div class="footer__contacts col-md-offset-1 col-md-4">
+				<h4 class="footer__address-title">Мы ждем вас в наших салонах:</h4>
 				<div class="row">
-					<div class="footer__address-tel">
+					<div class="footer__address-tel col-md-6">
 						<p class="footer__address">Московский 140</p>
 						<p class="footer__tel">+7(812) 314 78 32</p>
 					</div>
-					<div class="footer__address-tel">
+					<div class="footer__address-tel col-md-6">
 						<p class="footer__address">Рубинштейна 26</p>
 						<p class="footer__tel">+7(812) 314 78 32</p>
 					</div>
 				</div>
 				<div class="footer__time-mail">
 					<p class="footer__time">пн-пт 9.00-21.00, сб-вс 10.00-20.00</p>
-					<p class="footer__mail">kosmet@kosmet.ru</p>
+					<a href="#" class="footer__mail">kosmet@kosmet.ru</a>
 				</div>
+
 			</div>
 
-			<div class="footer__socials">
+			<div class="footer__socials col-md-2">
 					<p>Узнавайте первыми о новинках  и акциях.</p>
-					<ul class="footer__socials-list">
-						<li class="footer__socials-item--vk"><img src="#" alt="vk"></li>
-						<li class="footer__socials-item--fb"><img src="#" alt="fb"></li>
-						<li class="footer__socials-item--insta"><img src="#" alt="insta"></li>
-					</ul>
+					<div class="footer__socials-list">
+						<a href="#" class="footer__socials-item footer__socials-item--vk">
+							<img src="img/vk-white.png" alt="vk">
+						</a>
+						<a href="#" class="footer__socials-item footer__socials-item--fb">
+							<img src="img/fb-white.png" alt="fb">
+						</a>
+						<a href="#" class="footer__socials-item footer__socials-item--insta">
+							<img src="img/insta-white.png" alt="insta">
+						</a>
+					</div>
 			</div>	
 
 		</div>
+
+		<p class="footer__copyright">(с) ООО “Космет”.   Все права защищены.   Дизайн и разработка сайта SV-DESIGN</p>
 
 	</div>
 </footer>
