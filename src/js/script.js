@@ -1,3 +1,6 @@
 $(document).ready(function(){
-  // весь ваш код
+  $(".owl-carousel").owlCarousel({
+  	items: 1,
+  	center: true
+  });
 });

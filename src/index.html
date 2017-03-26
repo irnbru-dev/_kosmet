@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kosmet</title>
-	<link rel="stylesheet" href="css/style.css">
+	<<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -37,8 +40,8 @@
 	</div>
 </header>
 
-<section class="topnav">
-	<div class="topnav__inner container">
+<section class="topnav container">
+	<div class="topnav__inner">
 		<!-- <div class="row"> -->
 		<nav class="topnav__nav">
 			<ul class="topnav__list">
@@ -56,38 +59,42 @@
 	</div>
 </section>
 
-<section class="owl-carousel">
-	<div class="item"></div>
-	<div class="item"></div>
-	<div class="item"></div>
-</section>
+
+
+<div id="owl-carousel" class="owl-carousel owl-theme owl-loaded container">
+    <div class="owl-item"><img src="img/slide--one.jpg"></div>
+    <div class="owl-item"><img src="img/slide--one.jpg"></div>
+    <div class="owl-item"><img src="img/slide--one.jpg"></div>
+    <div class="owl-item"><img src="img/slide--one.jpg"></div>
+</div>
+
 
 	
-<section class="sidebar-main">
-	<div class="sidebar-main__inner container">
+<section class="sidebar">
+	<div class="sidebar__inner container">
 		<div class="row">
  
 		<div class="col-md-3">
-			<ul class="sidebar-main__list">
-				<li class="sidebar-main__link"><a href="#">Подарочный сертификат</a></li>
-				<li class="sidebar-main__link"><a href="#">Цены на услуги</a></li>
-				<li class="sidebar-main__link"><a href="#">Проблемы и решения</a></li>
-				<li class="sidebar-main__link"><a href="#">Наши специалисты</a></li>
-				<li class="sidebar-main__link"><a href="#">Задать вопрос специалисту</a></li>
-				<li class="sidebar-main__link"><a href="#">Профессионалам</a></li>
-				<li class="sidebar-main__link"><a href="#">Наши статьи</a></li>
+			<ul class="sidebar__list">
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Подарочный сертификат</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Цены на услуги</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Проблемы и решения</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Наши специалисты</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Задать вопрос специалисту</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Профессионалам</a></li>
+				<li class="sidebar__link sidebar__link--bordered"><a href="#">Наши статьи</a></li>
 			</ul>
 	
-			<p class="sidebar-main__txt">Подписывайтесь на нас в социальных сетях. Узнавайте первыми о новинках и акциях.</p>
+			<p class="sidebar__txt">Подписывайтесь на нас в социальных сетях. Узнавайте первыми о новинках и акциях.</p>
 
-			<div class="sidebar-main__socials-list">
-				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--vk">
+			<div class="sidebar__socials-list">
+				<a href="#" class="sidebar__socials-item sidebar__socials-item--vk">
 					<img src="img/vk.png" alt="vk">
 				</a>
-				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--fb">
+				<a href="#" class="sidebar__socials-item sidebar__socials-item--fb">
 					<img src="img/facebook.png" alt="fb">
 				</a>
-				<a href="#" class="sidebar-main__socials-item sidebar-main__socials-item--insta">
+				<a href="#" class="sidebar__socials-item sidebar__socials-item--insta">
 					<img src="img/instagram.png" alt="insta">
 				</a>
 			</div>
@@ -184,6 +191,8 @@
 
 	</div>
 </footer>
+
+<script src="./js/script.min.js"></script>
 	
 </body>
 </html>

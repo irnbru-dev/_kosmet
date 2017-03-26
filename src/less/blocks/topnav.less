@@ -1,19 +1,30 @@
 .topnav {
 
 	&__inner {
-		background-color: #48b79f;
+		background-color: @green;
 	}
 
 	&__list {
 		wrap: no-wrap;
+		padding-left: 0;
+		margin: 0;
+		text-align: center;
 	}
 
 	&__link {
 		display: inline-block;
-		padding: 0 0px;
+		padding: 0 5px;
+		margin: 0;
 		font-size: 15px;
 		line-height: 43px;
 		text-transform: uppercase;
+		border-top: 2px solid transparent;
+		&:hover {
+			border-top: 2px solid @white;
+		}
+		&:active {
+			background-color: @dark-green;
+		}
 	}
 
 	&__link a{
@@ -21,9 +32,5 @@
 		&:hover {
 			text-decoration: none;
 		}
-	}
-	
-	&__link:hover {
-		background-color: #456e72;
 	}
 }

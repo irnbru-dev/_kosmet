@@ -42,6 +42,12 @@ gulp.task('less', function(){
     .pipe(browserSync.stream());                            // обновляем в браузере
 });
 
+//Carousel
+gulp.task('css', function() {
+  return gulp.src('src/css/*.css')
+  .pipe(gulp.dest('build/css/'))
+  .pipe(browserSync.stream());
+});
 
 // ЗАДАЧА: Сборка HTML (заглушка)
 gulp.task('html', function() {
@@ -113,7 +119,7 @@ gulp.task('clean', function () {
 // ЗАДАЧА: Конкатенация и углификация Javascript
 gulp.task('js', function () {
   return gulp.src([
-      // список обрабатываемых файлов
+      // // список обрабатываемых файлов
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
@@ -170,7 +176,7 @@ gulp.task('css:fonts:woff2', function (callback) {
 // ЗАДАЧА: Сборка всего
 gulp.task('build', gulp.series(                             // последовательно:
   'clean',                                                  // последовательно: очистку папки сборки
-  gulp.parallel('less', 'img', 'js', 'svgstore', 'css:fonts:woff', 'css:fonts:woff2'),
+  gulp.parallel('less', 'css', 'img', 'js', 'svgstore', 'css:fonts:woff', 'css:fonts:woff2'),
   'html'                                                    // последовательно: сборку разметки
 ));
 
@@ -180,8 +186,8 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
     server: dirs.build,                                     // папка, которая будет «корнем» сервера (путь из константы)
     port: 3000,                                             // порт, на котором будет работать сервер
-    startPath: 'index.html',
-    // startPath: 'catalog-home.html',
+    // startPath: 'index.html',
+    startPath: 'catalog-home.html',
     // startPath: 'face-care.html',
     // startPath: 'product-page.html',
     // startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
@@ -204,6 +210,11 @@ gulp.task('serve', gulp.series('build', function() {
   gulp.watch(                                               // следим за изображениями
     dirs.source + '/img/*.{gif,png,jpg,jpeg,svg}',
     gulp.series('img', reloader)                            // при изменении оптимизируем, копируем и обновляем в браузере
+  );
+
+  gulp.watch(                                               // следим за CSS
+    dirs.source + '/css/**/*.css',
+    gulp.series('css')                                     // при изменении запускаем компиляцию (обновление браузера — в задаче компиляции)
   );
 
   gulp.watch(                                               // следим за JS

@@ -1,0 +1,76 @@
+.catalog-home {
+	background-color: @white;
+
+	&__cards-inner {
+		padding: 0 15px;
+	}
+
+	&__cards-title {
+		margin-top: 20px;
+		color: @dark-green;
+		font-size: 1.375em;
+		line-height: 1.857em;
+		margin-bottom: 25px;
+	}
+
+	&__card {
+		position: relative;
+		border: 1px solid @green;
+		margin-bottom: 30px;
+		height: 320px;
+
+		color: @dark-green;
+		font-size: 0.875em;
+		line-height: 1.428em;
+		padding-left: 15px;
+	}
+
+	&__img-box {
+		height: 180px;
+		img {
+			display: block;
+			margin: 0 auto;
+			max-height: 100%;
+		}
+	}
+
+	// &__card-txt {
+	// 	margin-bottom: 10px;
+	// }
+
+	&__vol {
+		display: inline-block;
+		margin-right: 50px;
+	}
+
+	input[type="text"] {
+		display: inline-block;
+		border: 1px solid @dark-green;
+		border-radius: 5px;
+		padding: 7px;
+		width: 40px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__card-price {
+		font-size: 1.275em;
+		line-height: 1.425em;
+		font-weight: bold;
+		&--old {
+			text-decoration: line-through;
+		}
+		&--new {
+			color: @pink;
+			margin-top: -9px;
+		}
+
+	}
+}
+
+
+.catalog-home__card>.order {
+	position: absolute;
+	bottom:0;
+	right:0;
+}
