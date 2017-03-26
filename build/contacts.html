@@ -3,40 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kosmet - Contacts</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-	<div class="header__inner">
+	<div class="header__inner container">
+		<div class="row">
 		
-		<div class="header__main-logo">
+		<div class="header__main-logo col-md-4">
 			<a href="#"><img src="img/main-logo.png" alt="Kosmet-LOGO"></a>
 			<p class="header__main-logo-txt">Центр Медицинской Косметологии</p>
 		</div>
 
 		<div class="header__contacts">
-			<div class="header__contact-box">
-				<p>ул. Рубинштейна, д.26</p>
-				<p>тел. +7(812) 314-78-32</p>
+			<div class="header__contact-box col-md-2">
+				<p class="header__contact-address">ул. Рубинштейна, д.26</p>
+				<p class="header__contact-tel">тел. +7(812) 314-78-32</p>
 			</div>
 
-			<div class="header__contact-box">
-				<p>Московский пр., д.73, к.3</p>
-				<p>тел. +7(812) 327-67-17</p>
+			<div class="header__contact-box col-md-3">
+				<p class="header__contact-address">Московский пр., д.73, к.3</p>
+				<p class="header__contact-tel">тел. +7(812) 327-67-17</p>
 			</div>
 
-			<div class="header__time-mail">
+			<div class="header__time-mail col-md-3">
 				<p>пн-пт 9:00-21:00, сб 10:00-20:00</p>
-				<p>kosmet@kosmet.ru</p>
+				<a class="header__mail" href="#">kosmet@kosmet.ru</a>
 			</div>
 		</div>
 
 	</div>
+	</div>
 </header>
 
-<section class="topnav">
+<section class="topnav container">
 	<div class="topnav__inner">
+		<!-- <div class="row"> -->
 		<nav class="topnav__nav">
 			<ul class="topnav__list">
 				<li class="topnav__link"><a href="#">О нас</a></li>
@@ -49,77 +55,83 @@
 				<li class="topnav__link"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
+		<!-- </div> -->
 	</div>
 </section>
 
+<div class="container">
+<div class="row">
+
 <ul class="breadcrumbs">
-	<li></li>
-	<li></li>
+	<li>Kosmet</li>
+	<li>Контакты</li>
 </ul>
 
 <div class="contacts">
 	<div class="contacts__inner">
-		<div class="contacts__title">
-			<div class="row">
-				
+		<div class="contacts__title">Контактная информация</div>
+
+				<div class="col-md-6">
 				<div class="contacts__item">
-					<h3 class="contacts__item-title">ул. Рубинштейна, 26</h3>
-					<p class="tel">+7(812) 314-78-32</p>
-					<p class="tel">+7(812) 315-46-23</p>
-					<p class="tel">+7(904) 641-60-69</p>
-					<p  class="time">пн-пт 9.00 – 21.00, сб-вс 10.00 – 20.00</p>
-					<p class="mail">kosmet@kosmet.ru</p>
+					<h3 class="contacts__txt contacts__item-title">ул. Рубинштейна, 26</h3>
+					<p class="contacts__txt contacts__tel">+7(812) 314-78-32</p>
+					<p class="contacts__txt contacts__tel">+7(812) 315-46-23</p>
+					<p class="contacts__txt contacts__tel">+7(904) 641-60-69</p>
+					<p class="contacts__txt contacts__time">пн-пт 9.00 – 21.00, сб-вс 10.00 – 20.00</p>
+					<div class="contacts__txt contacts__mail"><a href="#">kosmet@kosmet.ru</a></div>
 
-					<p>5 минут пешком от метро Достоевская, Владимирская</p>
-					<p>Рядом с центром действует открытая платная парковка ТК "Владимирский"</p>
+					<p class="contacts__txt contacts__subway">5 минут пешком от метро Достоевская, <br>Владимирская</p>
+					<p class="contacts__txt contacts__parking">Рядом с центром действует открытая платная <br>парковка ТК "Владимирский"</p>
 
-					<button>Записаться на консультацию</button>
+					<button class="consalt consalt--bordered">Записаться на консультацию</button>
 
 					<!-- тут карта -->
 
-					<div class="contacts__img"><img src="img/" alt=""></div>
-					<p>Вход с улицы Рубинштейна</p>
-					<p>ООО "Лак" Адрес места нахождения: РФ, 191002 Санкт-Петербург, ул. Рубинштейна, д.26, лит. А, пом.11-Н Зарегистрированное Регистрационной палатой Санкт-Петербурга 26.04.2002 с присвоением ОГРН №1027809237334 Лицензия на осуществление медицинской деятельности №78-01-005341 от 05.12.2014, выданная комитетом по здравоохранению Санкт-Петербурга. Адрес комитета по здравоохранению Санкт-Петербурга: РФ, 191023, Санкт-Петербург, ул. Малая Садовая, д.1, тел.: 7(812)314-04-43, 7(812)314-51-71</p>
+					<div class="contacts__map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1811a7e0f8f2e60022e6f339811f62393c2f3f5ab52a563137c7f08f61ce659d&amp;width=520&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+
+					<div class="contacts__img"><img src="img/enter_rubik.jpg" alt=""></div>
+					<p class="contacts__enter-txt">Вход с улицы Рубинштейна</p>
+					<p class="contacts__address-txt">ООО "Лак" Адрес места нахождения: РФ, 191002 Санкт-Петербург, ул. Рубинштейна, д.26, лит. А, пом.11-Н Зарегистрированное Регистрационной палатой Санкт-Петербурга 26.04.2002 с присвоением ОГРН №1027809237334 Лицензия на осуществление медицинской деятельности №78-01-005341 от 05.12.2014, выданная комитетом по здравоохранению Санкт-Петербурга. Адрес комитета по здравоохранению Санкт-Петербурга: РФ, 191023, Санкт-Петербург, ул. Малая Садовая, д.1, тел.: 7(812)314-04-43, 7(812)314-51-71</p>
 					
 				</div>
+				</div>
 
+
+				<div class="col-md-6">
 				<div class="contacts__item">
-					<h3 class="contacts__item-title">Московский пр., 140 </h3>
-					<p class="tel">+7(812) 314-78-32</p>
-					<p class="tel">+7(812) 315-46-23</p>
-					<p class="tel">+7(904) 641-60-69</p>
-					<p  class="time">пн-пт 9.00 – 21.00, сб-вс 10.00 – 20.00</p>
-					<p class="mail">kosmet@kosmet.ru</p>
+					<h3 class="contacts__txt contacts__item-title">Московский пр., 140 </h3>
+					<p class="contacts__txt contacts__tel">+7(812) 314-78-32</p>
+					<p class="contacts__txt contacts__tel">+7(812) 315-46-23</p>
+					<p class="contacts__txt contacts__tel">+7(904) 641-60-69</p>
+					<p class="contacts__txt contacts__time">пн-пт 9.00 – 21.00, сб-вс 10.00 – 20.00</p>
+					<div class="contacts__txt contacts__mail"><a href="#">kosmet@kosmet.ru</a></div>
 
-					<p></p>
-					<p></p>
+					<p class="contacts__txt contacts__subway">7 минут пешком от метро Московские ворота, <br>Электросила</p>
+					<p class="contacts__txt contacts__parking">Внимание! Парковка на Московском проспекте <br>(напротив центра) возможна только вдоль тротуара</p>
 
-					<button>Записаться на консультацию</button>
+					<button class="consalt consalt--bordered">Записаться на консультацию</button>
 
 					<!-- тут карта -->
+					<div class="contacts__map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1811a7e0f8f2e60022e6f339811f62393c2f3f5ab52a563137c7f08f61ce659d&amp;width=520&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
 
-					<div class="contacts__img"><img src="img/" alt=""></div>
-					<p>Вход с улицы Рубинштейна</p>
-					<p>ООО "Лак" Адрес места нахождения: РФ, 191002 Санкт-Петербург, ул. Рубинштейна, д.26, лит. А, пом.11-Н Зарегистрированное Регистрационной палатой Санкт-Петербурга 26.04.2002 с присвоением ОГРН №1027809237334 Лицензия на осуществление медицинской деятельности №78-01-005341 от 05.12.2014, выданная комитетом по здравоохранению Санкт-Петербурга. Адрес комитета по здравоохранению Санкт-Петербурга: РФ, 191023, Санкт-Петербург, ул. Малая Садовая, д.1, тел.: 7(812)314-04-43, 7(812)314-51-71</p>
+					<div class="contacts__img"><img src="img/enter_moscow.jpg" alt=""></div>
+					<p class="contacts__enter-txt">Вход с Московского проспекта</p>
+					<p class="contacts__address-txt">ООО "Лак" Адрес места нахождения: РФ, 191002 Санкт-Петербург, ул. Рубинштейна, д.26, лит. А, пом.11-Н Зарегистрированное Регистрационной палатой Санкт-Петербурга 26.04.2002 с присвоением ОГРН №1027809237334 Лицензия на осуществление медицинской деятельности №78-01-005341 от 05.12.2014, выданная комитетом по здравоохранению Санкт-Петербурга. Адрес комитета по здравоохранению Санкт-Петербурга: РФ, 191023, Санкт-Петербург, ул. Малая Садовая, д.1, тел.: 7(812)314-04-43, 7(812)314-51-71</p>
 					
 				</div>
+				</div>
+
 
 
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 <footer class="footer">

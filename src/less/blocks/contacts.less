@@ -1,0 +1,113 @@
+.contacts {
+	color: @grey;
+
+	&__title {
+		color: @dark-green;
+		font-size: 1.428em;
+		line-height: 3.071em;
+	}
+
+	&__item {
+		padding: 0 15px;
+		padding-top: 20px;
+		background-color: @white;
+	}
+
+	&__txt {
+		padding-left: 40px;
+		position: relative;
+		&:before {
+			position: absolute;
+			display: inline-block;
+			content: '';
+
+			width: 20px;
+			height: 20px;
+			left: 17px;
+			top: 3px;
+
+			background-repeat: no-repeat;
+			background-size: 80%;
+		}
+	}
+
+	&__item-title {
+		font-size: 1.571em;
+		margin-bottom: 30px;
+		background-repeat: no-repeat;
+		background-image: url(../../img/geo_point.png);
+	}
+
+	&__tel {
+		margin-bottom: 10px;
+		font-size: 1.286em;
+		line-height: 2.142em;
+		&:first-child {
+			top: 5px;
+			left: 10px;
+			background-repeat: no-repeat;
+			background-image: url(../../img/tel.png);
+	}
+	}
+
+	&__time {
+		margin-bottom: 25px;
+		background-repeat: no-repeat;
+		background-image: url(../../img/time.png);
+	}
+
+	&__mail {
+		background-repeat: no-repeat;
+		background-image: url(../../img/email.png);
+	}
+
+	&__mail a{
+		text-decoration: underline;
+		color: @green;
+	}
+
+	&__subway {
+		font-size: 1em;
+		line-height: 1.428em;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		background-repeat: no-repeat;
+		background-image: url(../../img/metro.png);
+	}
+
+	&__parking {
+		font-size: 1em;
+		line-height: 1.428em;
+		margin-bottom: 25px;
+		background-repeat: no-repeat;
+		background-image: url(../../img/parking.png);
+	}
+
+	&__map {
+		padding-right: 15px;
+		margin-top: 20px;
+	}
+
+	&__img {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	&__enter-txt {
+		color: @dark-green;
+		font-size: 1.285em;
+		line-height: 1.428em;
+		margin-bottom: 30px;
+	}
+
+	&__address-txt {
+		color: @dark-green;
+		font-size: 0.857em;
+		line-height: 1.428em;
+		padding-bottom: 25px;
+	}
+}
+
+
+
+

@@ -10,6 +10,27 @@
 	padding: 20px 30px;
 	color: @white;
 	text-transform: uppercase;
+	&--bordered {
+		position: relative;
+		background-color: @white;
+		border: 1px solid @pink;
+		color: @grey;
+		text-transform: none;
+		padding-left: 50px;
+		&:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+
+			width: 20px;
+			height: 20px;
+			left: 25px;
+
+			background-image: url(../../img/btn-consalt-icon.png);
+			background-repeat: no-repeat;
+			background-size: 80%;
+		}
+	}
 }
 
 .order {
