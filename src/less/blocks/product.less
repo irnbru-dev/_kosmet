@@ -1,0 +1,123 @@
+.product {
+
+	&__description,
+	&__action,
+	&__ingredient,
+	&__attention {
+		background-color: @white;
+	}
+
+	&__inner {
+		padding-left: 15px;
+
+		padding-bottom: 15px;
+	}
+
+	&__description-img-box {
+		width: 306px;
+		height: 306px;
+		border: 1px solid @green;
+		margin-right: 30px;
+		float: left;
+		img {
+			display: block;
+			margin: 0 auto;
+			height: 100%;
+		}
+
+	}
+
+	&__description-txt {
+		color: @grey;
+		font-size: 1em;
+		line-height: 1.428em;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		color: @dark-green;
+		font-size: 1.571em;
+		padding: 0 15px;
+		padding-top: 15px;
+		margin-bottom: 30px;
+		&--attention {
+			font-weight: bold;
+		}
+	}
+
+	&__txt {
+		color: @grey;
+		position: relative;
+		padding-left: 60px;
+		font-size: 1em;
+		&--marked:before {
+			content:  "— ";
+    		position: relative;
+    		left: -5px;
+		}
+		&--shifted {
+			padding-left: 110px;
+		}
+
+	}
+
+	&__description-box {
+		display: inline-block;
+		margin-bottom: 50px;
+
+		position: relative;
+		&:last-child:after {
+			content: '';
+			display: inline-block;
+
+			width: 100%;
+			height: 1px;
+			border-bottom: 1px solid @green;
+		}
+		input[type="text"] {
+			display: inline-block;
+			border: 1px solid @light-green;
+			border-radius: 5px;
+			padding: 5px;
+			width: 40px;
+		}
+		label {
+			color: @dark-green;
+			font-weight: normal;
+			font-size: 0.875em;
+			margin-right: 35px;
+		}
+
+	}
+
+	&__description-vol {
+		color: @grey;
+		font-size: 1.143em;
+		line-height: 1.428em;
+		margin-right: 35px;
+
+	}
+
+	&__description-price-old {
+		color: @grey;
+		text-decoration: line-through;
+		position: absolute;
+		top: 65px;
+	}
+
+	&__description-price-new {
+		color: @pink;
+		font-size: 1.714em;
+		margin-right: 35px;
+	}
+}
+
+.product__description-box>.order {
+	margin-right: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
