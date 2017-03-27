@@ -5545,6 +5545,7 @@ a {
   padding: 20px 30px;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .consult--bordered {
   position: relative;
@@ -5775,26 +5776,79 @@ a {
 .procedure__course,
 .procedure__indications,
 .procedure__contrindications,
-.procedure__price {
+.procedure__info,
+.procedure__price,
+.procedure__video,
+.procedure__compare {
   background-color: #fff;
 }
 .procedure__course,
 .procedure__indications,
 .procedure__contrindications {
   padding-left: 200px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.procedure__course:before,
+.procedure__indications:before,
+.procedure__contrindications:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 95px;
+  top: 35px;
+  left: 10%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.procedure__course:before {
+  background-image: url(../../img/ico-1.png);
+}
+.procedure__indications:before {
+  background-image: url(../../img/ico-2.png);
+}
+.procedure__contrindications:before {
+  background-image: url(../../img/ico-3.png);
+}
+.procedure__inner {
+  padding: 0 15px;
+  padding-bottom: 15px;
 }
 .procedure__title {
   color: #456e72;
   font-size: 1.285em;
   line-height: 1.428em;
+  padding-top: 15px;
   margin-bottom: 25px;
   margin-top: 20px;
+}
+.procedure__links-box {
+  float: right;
+  margin-bottom: 30px;
+}
+.procedure__links-box a {
+  color: #456e72;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+.procedure__description-img-box {
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+}
+.procedure__description-img-box img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
 }
 .procedure__description-txt {
   color: #333333;
   font-size: 1em;
   line-height: 1.428em;
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 .procedure__description-txt:last-child {
   margin-bottom: none;
@@ -5822,6 +5876,9 @@ a {
   color: #456e72;
   font-size: 1em;
 }
+.procedure__price-table {
+  width: 100%;
+}
 .procedure__price tr {
   background-color: #c7e8e0;
 }
@@ -5834,13 +5891,62 @@ a {
 }
 .procedure__info {
   border: 3px solid #48b79f;
-  margin-top: 40px;
+  position: relative;
+}
+.procedure__info:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 95px;
+  top: 20%;
+  left: 10%;
+  background-image: url(../../img/info.png);
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+.procedure__info-inner {
+  padding: 20px 0;
 }
 .procedure__info-txt {
   color: #fc7279;
   font-size: 1.143em;
   line-height: 1.714em;
   text-align: center;
+  padding-left: 200px;
+}
+.procedure__info-links {
+  margin: 30px 0;
+}
+.procedure__info-links a {
+  color: #456e72;
+  text-decoration: underline;
+  margin-right: 30px;
+}
+.procedure__compare {
+  margin-bottom: 50px;
+}
+.procedure__compare-img-box {
+  float: left;
+  margin-right: 10px;
+}
+.procedure__compare-txt {
+  color: #456e72;
+  font-size: 1em;
+  margin-left: 10px;
+}
+.procedure__compare-txt--grey-bg {
+  background-color: #f1f1f1;
+  padding: 5px 0;
+  padding-left: 10px;
+}
+.procedure__compare-txt--grey-bg span {
+  color: #fc7279;
+  text-decoration: underline;
+}
+.procedure__compare-txt span {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 .product__description,
 .product__action,
