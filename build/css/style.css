@@ -5818,6 +5818,77 @@ a {
   line-height: 1.428em;
   padding-bottom: 25px;
 }
+.procedure__description,
+.procedure__course,
+.procedure__indications,
+.procedure__contrindications,
+.procedure__price {
+  background-color: #fff;
+}
+.procedure__course,
+.procedure__indications,
+.procedure__contrindications {
+  padding-left: 200px;
+}
+.procedure__title {
+  color: #456e72;
+  font-size: 1.285em;
+  line-height: 1.428em;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.procedure__description-txt {
+  color: #333333;
+  font-size: 1em;
+  line-height: 1.428em;
+  margin-bottom: 30px;
+}
+.procedure__description-txt:last-child {
+  margin-bottom: none;
+}
+.procedure__txt {
+  color: #333333;
+  font-size: 1em;
+  line-height: 1.428em;
+  padding-left: 30px;
+  position: relative;
+}
+.procedure__txt--marked:before {
+  content: "— ";
+  position: relative;
+  left: -5px;
+}
+.procedure__price {
+  margin-bottom: 40px;
+}
+.procedure__price td {
+  padding: 20px;
+  padding-left: 15px;
+}
+.procedure__price-procedure-name {
+  color: #456e72;
+  font-size: 1em;
+}
+.procedure__price tr {
+  background-color: #c7e8e0;
+}
+.procedure__price tr:nth-child(2n) {
+  background-color: #fff;
+}
+.procedure__price-price {
+  color: #fc7279;
+  font-size: 1.143em;
+}
+.procedure__info {
+  border: 3px solid #48b79f;
+  margin-top: 40px;
+}
+.procedure__info-txt {
+  color: #fc7279;
+  font-size: 1.143em;
+  line-height: 1.714em;
+  text-align: center;
+}
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;

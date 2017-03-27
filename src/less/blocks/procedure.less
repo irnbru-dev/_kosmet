@@ -1,0 +1,85 @@
+.procedure {
+	&__description, 
+	&__course,
+	&__indications,
+	&__contrindications,
+	&__price {
+		background-color: @white;
+	}
+
+	&__course,
+	&__indications,
+	&__contrindications {
+		padding-left: 200px;
+	}
+
+	&__title {
+		color: @dark-green;
+		font-size: 1.285em;
+		line-height: 1.428em;
+		margin-bottom: 25px;
+		margin-top: 20px;
+	}
+
+	&__description-txt {
+		color: @grey;
+		font-size: 1em;
+		line-height: 1.428em;
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: none;
+		}
+	}
+
+	&__txt {
+		color: @grey;
+		font-size: 1em;
+		line-height: 1.428em;
+		padding-left: 30px;
+		position: relative;
+		&--marked:before {
+			content:  "— ";
+    		position: relative;
+    		left: -5px;
+		}
+	}
+
+	&__price {
+		margin-bottom: 40px;
+	}
+
+	&__price td {
+		padding: 20px;
+		padding-left: 15px;
+	}
+
+	&__price-procedure-name {
+		color: @dark-green;
+		font-size: 1em;
+	}
+
+	&__price tr {
+		background-color: @light-green;
+	}
+
+	&__price tr:nth-child(2n) {
+		background-color: @white;
+	}
+
+	&__price-price {
+		color: @pink;
+		font-size: 1.143em;
+	}
+
+	&__info {
+		border: 3px solid @green;
+		margin-top: 40px;
+	}
+
+	&__info-txt {
+		color: @pink;
+		font-size: 1.143em;
+		line-height: 1.714em;
+		text-align: center;
+	}
+}

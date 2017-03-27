@@ -188,9 +188,9 @@ gulp.task('serve', gulp.series('build', function() {
     port: 3000,                                             // порт, на котором будет работать сервер
     // startPath: 'index.html',
     // startPath: 'catalog-home.html',
-    // startPath: 'face-care.html',
+    startPath: 'face-care.html',
     // startPath: 'product-page.html',
-    startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });
 
