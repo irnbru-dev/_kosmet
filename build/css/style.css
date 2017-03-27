@@ -5627,6 +5627,8 @@ a {
 .promo-cards__title {
   margin-top: 90px;
   padding-bottom: 25px;
+  color: #456e72;
+  font-size: 20px;
 }
 .promo-cards__txt {
   font-size: 14px;
@@ -5686,6 +5688,7 @@ a {
   color: #456e72;
   font-size: 1.428em;
   line-height: 3.071em;
+  padding-left: 20px;
 }
 .contacts__item {
   padding: 0 15px;
@@ -5982,9 +5985,21 @@ a {
   padding: 0 15px;
   padding-top: 15px;
   margin-bottom: 30px;
+  position: relative;
 }
 .product__title--attention {
   font-weight: bold;
+}
+.product__title--attention:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  top: 70px;
+  background-image: url(../../img/icon--warning.png);
+  background-repeat: none;
+  background-size: 100%;
 }
 .product__txt {
   color: #333333;
@@ -6035,7 +6050,7 @@ a {
   color: #333333;
   text-decoration: line-through;
   position: absolute;
-  top: 65px;
+  top: -15px;
 }
 .product__description-price-new {
   color: #fc7279;
