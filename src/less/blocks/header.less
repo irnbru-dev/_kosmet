@@ -1,7 +1,60 @@
 .header {
 	color: #456e72;
-	padding-top: 20px;
+	// padding-top: 20px;
 	padding-bottom: 20px;
+
+	&__top {
+		background-color: @white;
+		padding: 10px 0;
+		p {
+			display: inline-block;
+		}
+	}
+
+	&__top-bookmark {
+		color: @grey;
+		font-size: 1em;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+
+			width: 15px;
+			height: 15px;
+
+			background-image: url(../../img/zakladka.png);
+			background-repeat: none;
+			background-size: 100%;
+		}
+	}
+
+	&__top-total {
+		color: @pink;
+		font-size: 1em;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+
+			width: 15px;
+			height: 15px;
+
+			background-image: url(../../img/);
+			background-repeat: none;
+			background-size: 100%;
+		}
+	}
+
+	&__main {
+		background-color: #f1f1f1;
+		padding-top: 20px;
+	}
+
+	&__top-total {
+		margin-left: 95px;
+	}
 
 	&__main-logo {
 		position: relative;

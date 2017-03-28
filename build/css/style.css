@@ -5416,8 +5416,51 @@ a {
 }
 .header {
   color: #456e72;
-  padding-top: 20px;
   padding-bottom: 20px;
+}
+.header__top {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.header__top p {
+  display: inline-block;
+}
+.header__top-bookmark {
+  color: #333333;
+  font-size: 1em;
+  position: relative;
+}
+.header__top-bookmark:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../img/zakladka.png);
+  background-repeat: none;
+  background-size: 100%;
+}
+.header__top-total {
+  color: #fc7279;
+  font-size: 1em;
+  position: relative;
+}
+.header__top-total:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../img/);
+  background-repeat: none;
+  background-size: 100%;
+}
+.header__main {
+  background-color: #f1f1f1;
+  padding-top: 20px;
+}
+.header__top-total {
+  margin-left: 95px;
 }
 .header__main-logo {
   position: relative;
@@ -5647,6 +5690,10 @@ a {
   font-size: 14px;
   line-height: 1.714em;
   background-color: #fff;
+}
+.promo-cards > .consult {
+  display: block;
+  margin: 0 auto;
 }
 .home-cosmetic {
   background-color: #fff;
