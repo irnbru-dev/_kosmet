@@ -41,8 +41,50 @@
 	border: none;
 	text-transform: uppercase;
 	color: @white;
+	position: relative;
 	&:hover {
 		background-color: @dark-green;
 	}
+	&:before {
+		position: absolute;
+		content: '';
+		display: inline-block;
 
+		width: 15px;
+		height: 15px;
+		top:15px;
+		left: 10px;
+
+
+		background-image: url(../img/);
+		background-size: 100%;
+		background-repeat: none;
+	}
+
+}
+
+
+.basket {
+	background-color: @pink;
+	border: none;
+	padding: 15px;
+	padding-left: 40px;
+	color: @white;
+	text-transform: uppercase;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: '';
+		display: inline-block;
+
+		width: 15px;
+		height: 15px;
+		top:15px;
+		left: 10px;
+
+
+		background-image: url(../img/);
+		background-size: 100%;
+		background-repeat: none;
+	}
 }

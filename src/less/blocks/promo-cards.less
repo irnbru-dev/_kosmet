@@ -16,14 +16,40 @@
 .promo-card {
 	&__item {
 		margin-bottom: 30px;
+		position: relative;
 		img {
 			width: 100%;
 		}
-	}
+		&:before {
+			position: absolute;
+			content: '';
+			text-align: center;
+			padding-top: 10px;
+			color: @white;
+			text-transform: uppercase;
+			display: inline-block;
 
-	// &__item-img-box img {
-	// 	width: 100%;
-	// }
+			width: 100px;
+			height: 40px;
+			left: 15px;
+			top: 20px;
+		}
+
+		&--new:before {
+			content: 'Новинка';
+			background-color: rgba(255,162,81,0.85);
+		}
+
+		&--best:before {
+			content: 'Хит';
+			background-color: rgba(83,196,75,0.85);
+		}
+
+		&--sale:before {
+			content: 'Акция';
+			background-color: rgba(252,114,121,0.85);
+		}
+	}
 
 	&__item-txt {
 		padding: 15px;

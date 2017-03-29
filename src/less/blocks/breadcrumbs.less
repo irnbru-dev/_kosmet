@@ -1,0 +1,22 @@
+.breadcrumbs {
+	margin-top: 20px;
+	padding-top: 20px;
+
+	&__item {
+		text-decoration: underline;
+		color: @pink;
+		font-size: 0.857em;
+		line-height: 1.429em;
+		&:after {
+			position: relative;
+			content: ' -';
+		}
+		&--active {
+			color: @green;
+			text-decoration: none;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
