@@ -5419,8 +5419,12 @@ a {
   padding-bottom: 20px;
 }
 .header__top {
+  position: fixed;
   background-color: #fff;
   padding: 10px 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 .header__top p {
   display: inline-block;
@@ -5462,6 +5466,7 @@ a {
 .header__main {
   background-color: #f1f1f1;
   padding-top: 20px;
+  margin-top: 45px;
 }
 .header__top-total {
   margin-left: 95px;
