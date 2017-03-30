@@ -5453,7 +5453,9 @@ a {
   display: inline-block;
   width: 18px;
   height: 17px;
-  background-image: url(../img/);
+  left: -35px;
+  top: 2px;
+  background-image: url(../img/cart.png);
   background-repeat: none;
   background-size: 100%;
 }
@@ -5534,6 +5536,17 @@ a {
   color: #456e72;
   padding-left: 15px;
   margin-bottom: 30px;
+}
+.sidebar__sublist a {
+  color: #456e72;
+}
+.sidebar__sublink {
+  padding: 10px 0;
+  text-decoration: none;
+}
+.sidebar__sublink a:hover {
+  text-decoration: none;
+  color: #fc7279;
 }
 .sidebar__link {
   padding: 15px 0;
@@ -5632,9 +5645,9 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
-  top: 15px;
-  left: 10px;
-  background-image: url(../img/);
+  top: 17px;
+  left: 13px;
+  background-image: url(../img/cart-white.png);
   background-size: 100%;
   background-repeat: none;
 }
@@ -5653,9 +5666,9 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
-  top: 15px;
-  left: 10px;
-  background-image: url(../img/);
+  top: 17px;
+  left: 13px;
+  background-image: url(../img/cart-white.png);
   background-size: 100%;
   background-repeat: none;
 }
@@ -6045,23 +6058,32 @@ a {
   float: left;
   margin-right: 10px;
 }
-.procedure__compare-txt {
+.procedure__compare-top-txt {
   color: #456e72;
   font-size: 1em;
   margin-left: 10px;
 }
-.procedure__compare-txt--grey-bg {
+.procedure__compare-top-txt--grey-bg {
   background-color: #f1f1f1;
   padding: 5px 0;
-  padding-left: 10px;
+  margin-left: 10px;
 }
-.procedure__compare-txt--grey-bg span {
+.procedure__compare-top-txt--grey-bg span {
   color: #fc7279;
   text-decoration: underline;
 }
-.procedure__compare-txt span {
+.procedure__compare-top-txt span {
   text-transform: uppercase;
   font-size: 18px;
+}
+.procedure__compare-bottom {
+  margin-top: 20px;
+  padding-bottom: 45px;
+}
+.procedure__compare-bottom-txt {
+  color: #48b79f;
+  text-transform: uppercase;
+  font-size: 1.286em;
 }
 .face-care__contant > .consult {
   display: block;
@@ -6233,6 +6255,31 @@ a {
   width: 40px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.product__card:before {
+  position: absolute;
+  content: '';
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  left: 0;
+  top: 20px;
+}
+.product__card--new:before {
+  content: 'Новинка';
+  background-color: rgba(255, 162, 81, 0.85);
+}
+.product__card--best:before {
+  content: 'Хит';
+  background-color: rgba(83, 196, 75, 0.85);
+}
+.product__card--sale:before {
+  content: 'Акция';
+  background-color: rgba(252, 114, 121, 0.85);
 }
 .product__img-box {
   height: 180px;
