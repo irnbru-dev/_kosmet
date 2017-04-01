@@ -10,13 +10,16 @@
 	&__address-title {
 		font-size: @fz;
 		text-transform: uppercase;
+		margin-bottom: 20px;
 	}
 
 	&__address-tel {
 
 		padding-left: 30px;
-		font-size: @fz;
+		font-size: 14px;
+		line-height: 20px;
 		position: relative;
+		margin-bottom: 20px;
 		&:before {
 			position: absolute;
 			display: inline-block;
@@ -25,12 +28,25 @@
 			width: 15px;
 			height: 20px;
 			left: 7px;
-			top: 7px;
+			top: 5px;
 
 			background-image: url(../img/geo_point.png);
 			background-repeat: no-repeat;
 			background-size: 100%;
 			color: @pink;
+		}
+	}
+
+	&__tel {
+		text-decoration: none;
+		color: @white;
+		&:hover {
+			text-decoration: none;
+			color: @white;
+		}
+		&:visited {
+			text-decoration: none;
+			color: @white;
 		}
 	}
 

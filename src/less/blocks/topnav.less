@@ -1,4 +1,6 @@
 .topnav {
+	font-size: 1em;
+	margin-bottom: 20px;
 
 	&__inner {
 		background-color: @green;
@@ -11,7 +13,7 @@
 		text-align: center;
 	}
 
-	&__link {
+	&__item {
 		display: inline-block;
 		padding: 0 5px;
 		margin: 0;
@@ -27,9 +29,10 @@
 		}
 	}
 
-	&__link a{
-		color: #fff;
+	&__link {
+		color: @white;
 		&:hover {
+			color: @white;
 			text-decoration: none;
 		}
 	}

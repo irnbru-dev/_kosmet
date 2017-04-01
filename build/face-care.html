@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kosmet - Face Care</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -54,18 +54,20 @@
 
 <section class="topnav container">
 	<div class="topnav__inner">
+		<!-- <div class="row"> -->
 		<nav class="topnav__nav">
 			<ul class="topnav__list">
-				<li class="topnav__link"><a href="#">О нас</a></li>
-				<li class="topnav__link"><a href="#">Уход за лицом</a></li>
-				<li class="topnav__link"><a href="#">Уход за телом</a></li>
-				<li class="topnav__link"><a href="#">Эпиляция</a></li>
-				<li class="topnav__link"><a href="#">Эстетическая флебология</a></li>
-				<li class="topnav__link"><a href="#">Косметика для домашнего ухода</a></li>
-				<li class="topnav__link"><a href="#">Акции</a></li>
-				<li class="topnav__link"><a href="#">Контакты</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">О нас</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Уход за лицом</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Уход за телом</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Эпиляция</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Эстетическая флебология</a></li>
+				<li class="topnav__item"><a  class="topnav__link" href="#">Косметика для домашнего ухода</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Акции</a></li>
+				<li class="topnav__item"><a class="topnav__link" href="#">Контакты</a></li>
 			</ul>
 		</nav>
+		<!-- </div> -->
 	</div>
 </section>
 
@@ -115,11 +117,11 @@
 			<a class="breadcrumbs__item breadcrumbs__item--active" href="#">Мезонити</a>
 		</nav>
 
-		<h2 class="procedure__title">3D Мезонити - инновационная методика подтяжки кожи и устранения морщин!</h2>
+		<h1 class="procedure__title">3D Мезонити - инновационная методика подтяжки кожи и устранения морщин!</h1>
 		<div class=" clearfix">
 			<div class="procedure__links-box">
-				<a href="#">Записаться на консультацию</a>
-				<a href="#">Цены на мезотерапию</a>
+				<a href="#" class="procedure__link">Записаться на консультацию</a>
+				<a href="#procedure__price" class="procedure__link">Цены на мезотерапию</a>
 			</div>
 		</div>
 
@@ -133,7 +135,7 @@
 
 		<div class="clearfix">
 			<div class="procedure__links-box">
-				<a href="" class="procedure__description-more-about">Читать далее</a>
+				<a href="" class="procedure__link-more-about">Читать далее</a>
 			</div>
 		</div>
 
@@ -169,7 +171,7 @@
 	</div>
 </section>
 
-<section class="procedure__price">
+<section id="procedure__price" class="procedure__price">
 	<div class="procedure__inner">
 		<h2 class="procedure__title">Цены на мезотерапию</h2>
 		<table class="procedure__price-table">
@@ -199,7 +201,9 @@
 	</div>
 </section>
 
-<button class="consult">Записаться на консультацию</button>
+
+<a href="#" class="btn consult">Записаться на консультацию</a>
+
 
 
 <section class="procedure__info">
@@ -234,8 +238,8 @@
 				<div class="procedure__compare-img-box">
 					<img src="img/face_stage_5.jpg" alt="woman">
 				</div>
-				<p class="procedure__compare-top-txt"><span>Цель: </span>Сделать красиво или очень красиво, Сделать красиво или очень красиво, Сделать красиво или очень красиво, Сделать красиво или очень красиво. </p>
-				<p class="procedure__compare-top-txt"><span>Что делали: </span>Установили 8 мезонитей за 2 процедуры, что дало быстрый и безболезненный эффект. мы молодцы .</p>
+				<p class="procedure__compare-top-txt"><span class="procedure__compare-top-txt--bold">Цель: </span>Сделать красиво или очень красиво, Сделать красиво или очень красиво, Сделать красиво или очень красиво, Сделать красиво или очень красиво. </p>
+				<p class="procedure__compare-top-txt"><span class="procedure__compare-top-txt--bold">Что делали: </span>Установили 8 мезонитей за 2 процедуры, что дало быстрый и безболезненный эффект. мы молодцы .</p>
 				<p class="procedure__compare-top-txt procedure__compare-top-txt--grey-bg">Процедура выполнена врачом-косметологом <span>Горбуновой Т.А.</span></p>
 			</div>
 		</div>
@@ -262,7 +266,7 @@
 </section>
 
 
-	<button class="consult">Записаться на консультацию</button>
+	<a href="#" class="btn consult">Записаться на консультацию</a>
 
 </section>
 </div>
@@ -280,11 +284,11 @@
 				<div class="row">
 					<div class="footer__address-tel col-md-6">
 						<p class="footer__address">Московский 140</p>
-						<p class="footer__tel">+7(812) 314 78 32</p>
+						<a href="+78123147832" class="footer__tel">+7(812) 314 78 32</a>
 					</div>
 					<div class="footer__address-tel col-md-6">
 						<p class="footer__address">Рубинштейна 26</p>
-						<p class="footer__tel">+7(812) 314 78 32</p>
+						<a href="+78123147832" class="footer__tel">+7(812) 314 78 32</a>
 					</div>
 				</div>
 				<div class="footer__time-mail">

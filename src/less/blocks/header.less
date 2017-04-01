@@ -5,6 +5,7 @@
 
 	&__top {
 		position: fixed;
+		z-index: 10;
 		background-color: @white;
 		padding: 10px 0;
 		left: 0;
@@ -39,6 +40,7 @@
 		color: @pink;
 		font-size: 1em;
 		position: relative;
+		margin-left: 95px;
 		&:before {
 			position: absolute;
 			content: '';
@@ -60,10 +62,6 @@
 		background-color: #f1f1f1;
 		padding-top: 20px;
 		margin-top: 45px;
-	}
-
-	&__top-total {
-		margin-left: 95px;
 	}
 
 	&__main-logo {
@@ -96,7 +94,13 @@
 
 
 	&__contact-tel {
+		text-decoration: none;
+		color: @dark-green;
 		font-weight: bold;
+		margin-top: -5px;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__mail {

@@ -60,10 +60,15 @@
 		margin-bottom: 30px;
 	}
 
-	&__links-box a {
+	&__link {
 		color: @dark-green;
 		text-decoration: underline;
 		margin-left: 50px;
+	}
+
+	&__link-more-about {
+		color: @green;
+		text-decoration: underline;
 	}
 
 	&__description-img-box {
@@ -131,6 +136,7 @@
 	&__price-price {
 		color: @pink;
 		font-size: 1.143em;
+		text-align: right;
 	}
 
 	&__info {
@@ -161,6 +167,7 @@
 		color: @pink;
 		font-size: 1.143em;
 		line-height: 1.714em;
+		font-weight: 600;
 		text-align: center;
 		padding-left: 200px;
 	}
@@ -190,19 +197,20 @@
 	&__compare-top-txt {
 		color: @dark-green;
 		font-size: 1em;
-		margin-left: 10px;
+		margin-left: 185px;
 		&--grey-bg {
 			background-color: @bg-color;
 			padding: 5px 0;
-			margin-left: 10px;
+			padding-left: 15px;
 			span {
-				color: @pink;
+				color: @orange;
 				text-decoration: underline;
 			}
 		}
-		span {
+		&--bold {
 			text-transform: uppercase;
 			font-size: 18px;
+			font-weight: 600;
 		}
 	}
 
@@ -224,4 +232,8 @@
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 40px;
+	width: 350px;
+	&:visited {
+		color: @white;
+	}
 }

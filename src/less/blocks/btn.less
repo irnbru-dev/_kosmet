@@ -1,6 +1,5 @@
 .btn {
 
-
 }
 
 .consult {
@@ -11,6 +10,10 @@
 	color: @white;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	&:hover {
+		background-color: @green;
+		color: @white;
+	}
 	&--bordered {
 		position: relative;
 		background-color: @white;
@@ -18,6 +21,9 @@
 		color: @grey;
 		text-transform: none;
 		padding-left: 50px;
+		&:hover {
+			background-color: @white;
+		}
 		&:before {
 			position: absolute;
 			content: '';
