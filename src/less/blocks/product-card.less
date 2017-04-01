@@ -14,15 +14,6 @@
 			outline: 2px solid @green;
 		}
 
-		input[type="number"] {
-			display: inline-block;
-			border: 1px solid @dark-green;
-			border-radius: 5px;
-			padding: 7px;
-			width: 50px;
-			margin-right: 10px;
-			margin-bottom: 10px;
-		}
 		&:before {
 			position: absolute;
 			content: '';
@@ -53,7 +44,30 @@
 			content: 'Акция';
 			background-color: rgba(252,114,121,0.85);
 		}
+
+		input[type="number"],
+		input[type="select"] {
+			display: inline-block;
+			border: 1px solid @light-green;
+			border-radius: 5px;
+			padding: 7px;
+			width: 50px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+
+		input[type="select"] {
+			width: 80px;
+		}
 	}
+
+	&__card-vol-select{
+		border: 1px solid @light-green;
+			padding: 20px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+	}
+
 
 	&__img-box {
 		height: 180px;

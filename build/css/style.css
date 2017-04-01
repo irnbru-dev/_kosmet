@@ -5637,6 +5637,7 @@ a {
 }
 .consult--bordered:hover {
   background-color: #fff;
+  color: #fc7279;
 }
 .consult--bordered:before {
   position: absolute;
@@ -5650,8 +5651,9 @@ a {
   background-size: 80%;
 }
 .order {
+  font-size: 14px;
   background-color: #48b79f;
-  padding: 15px;
+  padding: 12px;
   padding-left: 40px;
   border: none;
   text-transform: uppercase;
@@ -5674,9 +5676,10 @@ a {
   background-repeat: none;
 }
 .basket {
+  font-size: 14px;
   background-color: #fc7279;
   border: none;
-  padding: 15px;
+  padding: 12px;
   padding-left: 40px;
   color: #fff;
   text-transform: uppercase;
@@ -5887,10 +5890,11 @@ a {
   margin-bottom: 10px;
   font-size: 1.286em;
   line-height: 2.142em;
+  padding-bottom: -10px;
 }
 .contacts__tel:first-of-type:before {
-  top: 7px;
-  left: 17px;
+  top: 10px;
+  left: 0;
   background-repeat: no-repeat;
   background-image: url(../img/tel.png);
 }
@@ -5939,8 +5943,9 @@ a {
 .contacts__address-txt {
   color: #456e72;
   font-size: 0.857em;
-  line-height: 1.428em;
+  line-height: 20px;
   padding-bottom: 25px;
+  font-weight: 500;
 }
 .procedure__description,
 .procedure__course,
@@ -6303,15 +6308,6 @@ a {
 .product__card:hover {
   outline: 2px solid #48b79f;
 }
-.product__card input[type="number"] {
-  display: inline-block;
-  border: 1px solid #456e72;
-  border-radius: 5px;
-  padding: 7px;
-  width: 50px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
 .product__card:before {
   position: absolute;
   content: '';
@@ -6337,6 +6333,25 @@ a {
 .product__card--sale:before {
   content: 'Акция';
   background-color: rgba(252, 114, 121, 0.85);
+}
+.product__card input[type="number"],
+.product__card input[type="select"] {
+  display: inline-block;
+  border: 1px solid #c7e8e0;
+  border-radius: 5px;
+  padding: 7px;
+  width: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.product__card input[type="select"] {
+  width: 80px;
+}
+.product__card-vol-select {
+  border: 1px solid #c7e8e0;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 .product__img-box {
   height: 180px;
