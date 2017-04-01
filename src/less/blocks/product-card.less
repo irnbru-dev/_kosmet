@@ -9,7 +9,7 @@
 		color: @dark-green;
 		font-size: 0.875em;
 		line-height: 1.428em;
-		padding-left: 15px;
+		
 		&:hover {
 			outline: 2px solid @green;
 		}
@@ -52,6 +52,7 @@
 			border-radius: 5px;
 			padding: 7px;
 			width: 50px;
+			margin-left: 15px;
 			margin-right: 10px;
 			margin-bottom: 10px;
 		}
@@ -59,6 +60,10 @@
 		input[type="select"] {
 			width: 80px;
 		}
+	}
+
+	&__card-txt {
+		margin-left: 15px;
 	}
 
 	&__card-vol-select{
@@ -71,6 +76,8 @@
 
 	&__img-box {
 		height: 180px;
+		display: block;
+		overflow: hidden;
 		img {
 			display: block;
 			margin: 0 auto;
@@ -80,6 +87,7 @@
 
 	&__vol {
 		display: inline-block;
+		margin-left: 15px;
 		margin-right: 50px;
 	}
 
@@ -87,6 +95,7 @@
 		font-size: 1.275em;
 		line-height: 1.425em;
 		font-weight: bold;
+		margin-left: 15px;
 		&--old {
 			text-decoration: line-through;
 		}

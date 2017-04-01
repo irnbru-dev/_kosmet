@@ -1,13 +1,11 @@
 .header {
 	color: #456e72;
-	// padding-top: 20px;
 	padding-bottom: 20px;
 
 	&__top {
 		position: fixed;
 		z-index: 10;
 		background-color: @white;
-		padding: 10px 0;
 		left: 0;
 		top: 0;
 		right: 0;
@@ -16,10 +14,55 @@
 		}
 	}
 
+	&__top-logo {
+		display: inline-block;
+	}
+
+	&__top-list {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	&__top-item {
+		display: inline-block;
+		line-height: 40px;
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		&:hover {
+			border-bottom: 2px solid @green;
+		}
+		&:active {
+			border-bottom: none;
+			background-color: @light-green;
+		}
+	}
+
+	&__top-link {
+		text-decoration: none;
+		color: @dark-green;
+		text-transform: uppercase;
+		padding: 0 13px;
+		font-size: 1em;
+		&:hover {
+			text-decoration: none;
+			color: @dark-green;
+		}
+		&:focus {
+			text-decoration: none;
+			color: @dark-green;
+		}
+		&:visited {
+			text-decoration: none;
+			color: @dark-green;
+		}
+	}
+
 	&__top-bookmark {
 		color: @grey;
 		font-size: 1em;
 		position: relative;
+		padding-top: 7px;
 		&:before {
 			position: absolute;
 			content: '';
@@ -28,7 +71,7 @@
 			width: 10px;
 			height: 15px;
 			left: -25px;
-			top: 2px;
+			top: 10px;
 
 			background-image: url(../img/zakladka.png);
 			background-repeat: none;
@@ -40,6 +83,7 @@
 		color: @pink;
 		font-size: 1em;
 		position: relative;
+		padding-top: 5px;
 		margin-left: 95px;
 		&:before {
 			position: absolute;
@@ -49,11 +93,11 @@
 			width: 18px;
 			height: 17px;
 			left: -35px;
-			top: 2px;
+			top: 9px;
 
 
 			background-image: url(../img/cart.png);
-			background-repeat: none;
+			background-repeat: no-repeat;
 			background-size: 100%;
 		}
 	}
@@ -74,8 +118,20 @@
 		left: 100px;
 	}
 
-	&__contact-box {
+	&__contact-address {
+		text-decoration: none;
+		color: @dark-green;
 		position: relative;
+		margin-bottom: 10px;
+		display: block;
+		&:hover {
+			text-decoration: none;
+			color: @dark-green;
+		}
+		&:visited {
+			text-decoration: none;
+			color: @dark-green;
+		}
 		&:before {
 			position: absolute;
 			display: inline-block;
@@ -83,7 +139,7 @@
 
 			width: 20px;
 			height: 20px;
-			left: -10px;
+			left: -25px;
 			top: 3px;
 
 			background-image: url(../img/geo_point.png);
@@ -94,10 +150,10 @@
 
 
 	&__contact-tel {
+		display: block;
 		text-decoration: none;
 		color: @dark-green;
 		font-weight: bold;
-		margin-top: -5px;
 		&:hover {
 			text-decoration: none;
 		}

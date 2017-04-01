@@ -5422,7 +5422,6 @@ a {
   position: fixed;
   z-index: 10;
   background-color: #fff;
-  padding: 10px 0;
   left: 0;
   top: 0;
   right: 0;
@@ -5430,10 +5429,51 @@ a {
 .header__top p {
   display: inline-block;
 }
+.header__top-logo {
+  display: inline-block;
+}
+.header__top-list {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.header__top-item {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header__top-item:hover {
+  border-bottom: 2px solid #48b79f;
+}
+.header__top-item:active {
+  border-bottom: none;
+  background-color: #c7e8e0;
+}
+.header__top-link {
+  text-decoration: none;
+  color: #456e72;
+  text-transform: uppercase;
+  padding: 0 13px;
+  font-size: 1em;
+}
+.header__top-link:hover {
+  text-decoration: none;
+  color: #456e72;
+}
+.header__top-link:focus {
+  text-decoration: none;
+  color: #456e72;
+}
+.header__top-link:visited {
+  text-decoration: none;
+  color: #456e72;
+}
 .header__top-bookmark {
   color: #333333;
   font-size: 1em;
   position: relative;
+  padding-top: 7px;
 }
 .header__top-bookmark:before {
   position: absolute;
@@ -5442,7 +5482,7 @@ a {
   width: 10px;
   height: 15px;
   left: -25px;
-  top: 2px;
+  top: 10px;
   background-image: url(../img/zakladka.png);
   background-repeat: none;
   background-size: 100%;
@@ -5451,6 +5491,7 @@ a {
   color: #fc7279;
   font-size: 1em;
   position: relative;
+  padding-top: 5px;
   margin-left: 95px;
 }
 .header__top-total:before {
@@ -5460,9 +5501,9 @@ a {
   width: 18px;
   height: 17px;
   left: -35px;
-  top: 2px;
+  top: 9px;
   background-image: url(../img/cart.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: 100%;
 }
 .header__main {
@@ -5478,26 +5519,38 @@ a {
   top: 40px;
   left: 100px;
 }
-.header__contact-box {
+.header__contact-address {
+  text-decoration: none;
+  color: #456e72;
   position: relative;
+  margin-bottom: 10px;
+  display: block;
 }
-.header__contact-box:before {
+.header__contact-address:hover {
+  text-decoration: none;
+  color: #456e72;
+}
+.header__contact-address:visited {
+  text-decoration: none;
+  color: #456e72;
+}
+.header__contact-address:before {
   position: absolute;
   display: inline-block;
   content: '';
   width: 20px;
   height: 20px;
-  left: -10px;
+  left: -25px;
   top: 3px;
   background-image: url(../img/geo_point.png);
   background-repeat: no-repeat;
   background-size: 70%;
 }
 .header__contact-tel {
+  display: block;
   text-decoration: none;
   color: #456e72;
   font-weight: bold;
-  margin-top: -5px;
 }
 .header__contact-tel:hover {
   text-decoration: none;
@@ -5506,20 +5559,20 @@ a {
   text-decoration: underline;
   color: #456e72;
 }
-.topnav {
+.main-nav {
   font-size: 1em;
   margin-bottom: 20px;
 }
-.topnav__inner {
+.main-nav__inner {
   background-color: #48b79f;
 }
-.topnav__list {
+.main-nav__list {
   wrap: no-wrap;
   padding-left: 0;
   margin: 0;
   text-align: center;
 }
-.topnav__item {
+.main-nav__item {
   display: inline-block;
   padding: 0 5px;
   margin: 0;
@@ -5528,18 +5581,26 @@ a {
   text-transform: uppercase;
   border-top: 2px solid transparent;
 }
-.topnav__item:hover {
+.main-nav__item:hover {
   border-top: 2px solid #fff;
 }
-.topnav__item:active {
+.main-nav__item:active {
   background-color: #456e72;
 }
-.topnav__link {
+.main-nav__link {
   color: #fff;
 }
-.topnav__link:hover {
+.main-nav__link:hover {
   color: #fff;
   text-decoration: none;
+}
+.main-nav__link:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.main-nav__link:visited {
+  text-decoration: none;
+  color: #fff;
 }
 .sidebar__title {
   font-size: 1.214em;
@@ -5622,6 +5683,7 @@ a {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 30px;
+  width: 350px;
 }
 .consult:hover {
   background-color: #48b79f;
@@ -5778,32 +5840,6 @@ a {
 }
 .promo-card__item:hover {
   text-decoration: none;
-}
-.promo-card__item:before {
-  position: absolute;
-  content: '';
-  text-align: center;
-  padding-top: 10px;
-  color: #fff;
-  font-size: 1.071em;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  left: 15px;
-  top: 20px;
-}
-.promo-card__item--new:before {
-  content: 'Новинка';
-  background-color: rgba(255, 162, 81, 0.85);
-}
-.promo-card__item--best:before {
-  content: 'Хит';
-  background-color: rgba(83, 196, 75, 0.85);
-}
-.promo-card__item--sale:before {
-  content: 'Акция';
-  background-color: rgba(252, 114, 121, 0.85);
 }
 .promo-card__item-txt {
   padding: 15px;
@@ -6303,7 +6339,6 @@ a {
   color: #456e72;
   font-size: 0.875em;
   line-height: 1.428em;
-  padding-left: 15px;
 }
 .product__card:hover {
   outline: 2px solid #48b79f;
@@ -6341,11 +6376,15 @@ a {
   border-radius: 5px;
   padding: 7px;
   width: 50px;
+  margin-left: 15px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 .product__card input[type="select"] {
   width: 80px;
+}
+.product__card-txt {
+  margin-left: 15px;
 }
 .product__card-vol-select {
   border: 1px solid #c7e8e0;
@@ -6355,6 +6394,8 @@ a {
 }
 .product__img-box {
   height: 180px;
+  display: block;
+  overflow: hidden;
 }
 .product__img-box img {
   display: block;
@@ -6363,12 +6404,14 @@ a {
 }
 .product__vol {
   display: inline-block;
+  margin-left: 15px;
   margin-right: 50px;
 }
 .product__card-price {
   font-size: 1.275em;
   line-height: 1.425em;
   font-weight: bold;
+  margin-left: 15px;
 }
 .product__card-price--old {
   text-decoration: line-through;
@@ -6422,6 +6465,38 @@ a {
 }
 .breadcrumbs__item--active:after {
   display: none;
+}
+.label {
+  position: relative;
+}
+.label:before {
+  position: absolute;
+  content: '';
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 1.071em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  left: 15px;
+  top: 20px;
+  border: 10px solid red;
+}
+.label:before--new:before {
+  padding: 10px;
+  content: 'Новинка';
+  background-color: rgba(255, 162, 81, 0.85);
+}
+.label:before--best:before {
+  content: 'Хит';
+  background-color: rgba(83, 196, 75, 0.85);
+}
+.label:before--sale:before {
+  content: 'Акция';
+  background-color: rgba(252, 114, 121, 0.85);
 }
 @media (min-width: 768px) {
   .lead {
