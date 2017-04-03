@@ -67,6 +67,7 @@
 		font-size: 1em;
 		position: relative;
 		padding-top: 7px;
+
 		&:before {
 			position: absolute;
 			content: '';
@@ -80,6 +81,22 @@
 			background-image: url(../img/favorite.svg);
 			background-repeat: no-repeat;
 			background-size: 100%;
+		}
+		span {
+			position: absolute;
+			font-size: 13px;
+			color: @dark-green;
+			display: inline-block;
+			content: "";
+
+			width: 30px;
+			height: 20px;
+
+			top: 10px;
+			right: -30px;
+			background-image: url(../img/12.png);
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 	}
 
@@ -103,6 +120,15 @@
 			background-image: url(../img/cart.png);
 			background-repeat: no-repeat;
 			background-size: 100%;
+		}
+		span {
+			position: absolute;
+			left: -23px;
+			color: @white;
+			font-size: 10px;
+			background-image: url(../img/99.png);
+			background-repeat: no-repeat;
+			background-size: 130%;
 		}
 	}
 

@@ -5491,6 +5491,20 @@ a {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.header__top-bookmark span {
+  position: absolute;
+  font-size: 13px;
+  color: #456e72;
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 20px;
+  top: 10px;
+  right: -30px;
+  background-image: url(../img/12.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header__top-total {
   color: #fc7279;
   font-size: 1em;
@@ -5509,6 +5523,15 @@ a {
   background-image: url(../img/cart.png);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.header__top-total span {
+  position: absolute;
+  left: -23px;
+  color: #fff;
+  font-size: 10px;
+  background-image: url(../img/99.png);
+  background-repeat: no-repeat;
+  background-size: 130%;
 }
 .header__main {
   background-color: #f1f1f1;
@@ -5689,7 +5712,7 @@ a {
   border-bottom: none;
 }
 .sidebar__link--bordered a:hover:before {
-  left: -50px;
+  left: -55px;
   margin-left: -5px;
 }
 .sidebar__txt {
@@ -6473,6 +6496,7 @@ a {
 .product__card input[type="select"] {
   width: 80px;
   padding-left: 15px;
+  margin-bottom: 0;
 }
 .product__card-txt {
   margin-left: 15px;

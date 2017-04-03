@@ -186,11 +186,11 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
     server: dirs.build,                                     // папка, которая будет «корнем» сервера (путь из константы)
     port: 3000,                                             // порт, на котором будет работать сервер
-    // startPath: 'index.html',
+    startPath: 'index.html',
     // startPath: 'catalog-home.html',
     // startPath: 'face-care.html',
     // startPath: 'product-page.html',
-    startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'contacts.html',                          // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });
 
@@ -214,7 +214,7 @@ gulp.task('serve', gulp.series('build', function() {
 
   gulp.watch(                                               // следим за CSS
     dirs.source + '/css/**/*.css',
-    gulp.series('css')                                     // при изменении запускаем компиляцию (обновление браузера — в задаче компиляции)
+    gulp.series('css')                                      // при изменении запускаем компиляцию (обновление браузера — в задаче компиляции)
   );
 
   gulp.watch(                                               // следим за JS
