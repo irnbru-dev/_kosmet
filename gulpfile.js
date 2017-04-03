@@ -189,8 +189,8 @@ gulp.task('serve', gulp.series('build', function() {
     // startPath: 'index.html',
     // startPath: 'catalog-home.html',
     // startPath: 'face-care.html',
-    startPath: 'product-page.html',
-    // startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
+    // startPath: 'product-page.html',
+    startPath: 'contacts.html',                                // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });
 

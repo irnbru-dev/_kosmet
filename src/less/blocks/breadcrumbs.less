@@ -2,14 +2,17 @@
 	margin-top: 20px;
 	padding-top: 20px;
 
+	&__list {
+		padding-left: 0;
+	}
+
 	&__item {
-		text-decoration: underline;
-		color: @pink;
-		font-size: 0.857em;
-		line-height: 1.429em;
+		display: inline-block;
 		&:after {
+			text-decoration: none;
 			position: relative;
-			content: ' -';
+			color: @pink;
+			content: ' - ';
 		}
 		&--active {
 			color: @green;
@@ -18,5 +21,24 @@
 				display: none;
 			}
 		}
+	}
+
+	&__link {
+		text-decoration: underline;
+		color: @pink;
+		font-size: 0.857em;
+		line-height: 1.429em;
+		// &:after {
+		// 	text-decoration: none;
+		// 	position: relative;
+		// 	content: ' - ';
+		// }
+		// &--active {
+		// 	color: @green;
+		// 	text-decoration: none;
+		// 	&:after {
+		// 		display: none;
+		// 	}
+		// }
 	}
 }

@@ -33,8 +33,15 @@
 
 	&__sublink {
 		color: @dark-green;
-		padding: 10px 0;
+		padding: 5px 0;
 		text-decoration: none;
+		display: block;
+		position: relative;
+		&:before {
+			content:  "—";
+    		position: absolute;
+    		left: -20px;
+		}
 		&:hover {
 			text-decoration: none;
 			color: @pink;
