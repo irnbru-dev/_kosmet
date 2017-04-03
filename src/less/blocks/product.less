@@ -57,15 +57,16 @@
 		}
 	}
 
-	&__txt {
+	&__item, &__txt {
 		color: @grey;
+		display: block;
 		position: relative;
 		padding-left: 60px;
 		font-size: 1em;
 		&--marked:before {
 			content:  "— ";
-    		position: relative;
-    		left: -5px;
+    		position: absolute;
+    		left: 15px;
 		}
 		&--shifted {
 			padding-left: 110px;
@@ -84,7 +85,7 @@
 			height: 1px;
 			border-bottom: 1px solid @green;
 		}
-		input[type="text"] {
+		input[type="number"] {
 			display: inline-block;
 			border: 1px solid @light-green;
 			border-radius: 5px;
