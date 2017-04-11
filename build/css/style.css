@@ -5537,6 +5537,18 @@ a {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.header__top-total:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 25px;
+  left: 50px;
+  top: 10px;
+  background-image: url(../../img/ruble.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .header__main {
   background-color: #f1f1f1;
   padding-top: 20px;
@@ -5773,7 +5785,7 @@ a {
   height: 20px;
   left: 25px;
   top: 35%;
-  background-image: url(../../img/pencil.svg);
+  background-image: url(../img/pencil.svg);
   background-repeat: no-repeat;
   background-size: 80%;
 }
@@ -5781,7 +5793,7 @@ a {
   width: 130px;
   font-size: 14px;
   background-color: #48b79f;
-  padding: 12px;
+  padding: 12px 20px;
   padding-left: 40px;
   border: none;
   text-transform: uppercase;
@@ -5807,11 +5819,11 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
-  top: 17px;
+  top: 14px;
   left: 13px;
-  background-image: url(../img/cart-white.png);
+  background-image: url(../img/cart-white.svg);
   background-size: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 .basket {
   width: 130px;
@@ -5842,11 +5854,11 @@ a {
   display: inline-block;
   width: 15px;
   height: 15px;
-  top: 17px;
+  top: 14px;
   left: 13px;
-  background-image: url(../img/cart-white.png);
+  background-image: url(../img/cart-white.svg);
   background-size: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 .footer {
   padding-top: 60px;
@@ -6599,6 +6611,19 @@ a {
 .product__card-price--new {
   color: #fc7279;
   margin-top: -9px;
+  position: relative;
+}
+.product__card-price--new:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 27px;
+  left: 50px;
+  top: 7px;
+  background-image: url(../../img/ruble.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .product__card > .order {
   position: absolute;

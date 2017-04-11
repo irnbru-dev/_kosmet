@@ -107,6 +107,22 @@
 		&--new {
 			color: @pink;
 			margin-top: -9px;
+
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '';
+				display: inline-block;
+
+				width: 10px;
+    			height: 27px;
+    			left: 50px;
+    			top: 7px;
+
+				background-image: url(../../img/ruble.svg);
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
 		}
 
 	}
