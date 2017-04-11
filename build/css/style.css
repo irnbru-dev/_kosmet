@@ -6060,7 +6060,7 @@ a {
   font-size: 1.571em;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-image: url(../../img/point--pink.svg);
+  background-image: url(../img/point--pink.svg);
 }
 .contacts__tel {
   margin-bottom: 10px;
@@ -6072,7 +6072,7 @@ a {
   top: 10px;
   left: 4px;
   background-repeat: no-repeat;
-  background-image: url(../../img/phone.svg);
+  background-image: url(../img/phone.svg);
 }
 .contacts__time {
   margin-bottom: 25px;
@@ -6082,12 +6082,12 @@ a {
   height: 20px;
   left: 1px;
   background-repeat: no-repeat;
-  background-image: url(../../img/time.svg);
+  background-image: url(../img/time.svg);
 }
 .contacts__mail:before {
   left: 0;
   background-repeat: no-repeat;
-  background-image: url(../../img/mail.svg);
+  background-image: url(../img/mail.svg);
 }
 .contacts__mail a {
   text-decoration: underline;
@@ -6102,7 +6102,7 @@ a {
 .contacts__subway:before {
   left: 0;
   background-repeat: no-repeat;
-  background-image: url(../../img/subway.svg);
+  background-image: url(../img/subway.svg);
 }
 .contacts__parking {
   font-size: 1em;
@@ -6112,7 +6112,7 @@ a {
 .contacts__parking:before {
   left: 1px;
   background-repeat: no-repeat;
-  background-image: url(../../img/parking.svg);
+  background-image: url(../img/parking.svg);
 }
 .contacts__map {
   padding-right: 15px;
@@ -6166,13 +6166,13 @@ a {
   background-size: 100%;
 }
 .procedure__course:before {
-  background-image: url(../img/ico-1.png);
+  background-image: url(../img/ico-1.svg);
 }
 .procedure__indications:before {
-  background-image: url(../img/ico-2.png);
+  background-image: url(../img/ico-2.svg);
 }
 .procedure__contrindications:before {
-  background-image: url(../img/ico-3.png);
+  background-image: url(../img/ico-3.svg);
 }
 .procedure__inner {
   padding: 0 15px;
@@ -6269,9 +6269,9 @@ a {
   height: 95px;
   top: 20%;
   left: 10%;
-  background-image: url(../img/info.png);
+  background-image: url(../img/info.svg);
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: 100%;
 }
 .procedure__info-inner {
   padding: 20px 0;
@@ -6468,6 +6468,19 @@ a {
   color: #fc7279;
   font-size: 1.714em;
   margin-right: 35px;
+  position: relative;
+}
+.product__description-price-new:after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  right: -18px;
+  background-image: url(../../img/ruble.svg);
+  background-repeat: none;
+  background-size: 100%;
 }
 .product__table-btn {
   text-align: right;
