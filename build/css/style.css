@@ -5483,23 +5483,23 @@ a {
   position: absolute;
   content: '';
   display: inline-block;
-  width: 10px;
+  width: 15px;
   height: 25px;
   left: -25px;
   top: 10px;
   background-image: url(../img/favorite.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
 }
 .header__top-bookmark span {
   position: absolute;
-  font-size: 13px;
+  font-size: 12px;
   color: #456e72;
   display: inline-block;
   content: "";
   width: 30px;
   height: 20px;
-  top: 10px;
+  top: 8px;
   right: -30px;
   background-image: url(../img/12.png);
   background-repeat: no-repeat;
@@ -5526,7 +5526,11 @@ a {
 }
 .header__top-total span {
   position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 15px;
   left: -23px;
+  top: 2px;
   color: #fff;
   font-size: 10px;
   background-image: url(../img/99.png);
