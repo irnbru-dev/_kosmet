@@ -12,6 +12,38 @@
 		padding-bottom: 15px;
 	}
 
+	&__description {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+
+    		width: 13px;
+    		height: 15px;
+    		top: 5%;
+    		right: 3%;
+
+			background-image: url(../img/print.svg);
+			background-repeat: no-repeat;
+			background-size: 100%;			
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			display: inline-block;
+
+    		width: 13px;
+    		height: 15px;
+    		top: 5%;
+    		right: 6%;
+
+			background-image: url(../../img/favorite.svg);
+			background-repeat: no-repeat;
+			background-size: 100%;			
+		}
+	}
+
 	&__description-img-box {
 		width: 306px;
 		height: 306px;
