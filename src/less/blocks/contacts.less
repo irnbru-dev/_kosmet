@@ -1,16 +1,17 @@
 .contacts {
 	color: @grey;
+	margin-top: -40px;
 
 	&__title {
+		margin-top: -10px;
 		color: @dark-green;
 		font-size: 1.428em;
 		line-height: 3.071em;
-
 	}
 
 	&__item {
 		padding: 0 15px;
-		padding-top: 20px;
+		padding-top: 10px;
 		background-color: @white;
 	}
 
@@ -36,7 +37,7 @@
 		font-size: 1.571em;
 		margin-bottom: 30px;
 		background-repeat: no-repeat;
-		background-image: url(../img/geo_point.png);
+		background-image: url(../../img/point--pink.svg);
 	}
 
 	&__tel {
@@ -46,21 +47,28 @@
 		padding-bottom: -10px;
 		&:first-of-type:before {
 			top: 10px;
-			left: 0;
+			left: 4px;
 			background-repeat: no-repeat;
-			background-image: url(../img/tel.png);
+			background-image: url(../../img/phone.svg);
 		}
 	}
 
 	&__time {
 		margin-bottom: 25px;
-		background-repeat: no-repeat;
-		background-image: url(../img/time.png);
+
+		&:before {
+			width: 20px;
+			height: 20px;
+			left: 1px;
+			background-repeat: no-repeat;
+			background-image: url(../../img/time.svg);
+		}
 	}
 
-	&__mail {
+	&__mail:before {
+		left: 0;
 		background-repeat: no-repeat;
-		background-image: url(../img/email.png);
+		background-image: url(../../img/mail.svg);
 	}
 
 	&__mail a{
@@ -73,16 +81,24 @@
 		line-height: 1.428em;
 		margin-top: 20px;
 		margin-bottom: 30px;
-		background-repeat: no-repeat;
-		background-image: url(../img/metro.png);
+
+		&:before {
+			left: 0;
+			background-repeat: no-repeat;
+			background-image: url(../../img/subway.svg);
+		}
 	}
 
 	&__parking {
 		font-size: 1em;
 		line-height: 1.428em;
 		margin-bottom: 25px;
-		background-repeat: no-repeat;
-		background-image: url(../img/parking.png);
+
+		&:before {
+			left: 1px;
+			background-repeat: no-repeat;
+			background-image: url(../../img/parking.svg);
+		}
 	}
 
 	&__map {

@@ -5520,7 +5520,7 @@ a {
   height: 17px;
   left: -35px;
   top: 9px;
-  background-image: url(../img/cart.png);
+  background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -5531,7 +5531,7 @@ a {
   font-size: 10px;
   background-image: url(../img/99.png);
   background-repeat: no-repeat;
-  background-size: 130%;
+  background-size: 100%;
 }
 .header__main {
   background-color: #f1f1f1;
@@ -5571,11 +5571,11 @@ a {
   content: '';
   width: 20px;
   height: 20px;
-  left: -25px;
+  left: -27px;
   top: 3px;
-  background-image: url(../img/geo_point.png);
+  background-image: url(../img/point--pink.svg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 100%;
 }
 .header__contact-tel {
   display: block;
@@ -5726,6 +5726,14 @@ a {
 .sidebar__socials-item {
   display: inline-block;
   margin-right: 10px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #456e72;
+}
+.sidebar__socials-item img {
+  width: 15px;
+  height: 15px;
 }
 .consult {
   background-color: #fc7279;
@@ -5760,11 +5768,13 @@ a {
   width: 20px;
   height: 20px;
   left: 25px;
-  background-image: url(../img/btn-consalt-icon.png);
+  top: 35%;
+  background-image: url(../../img/pencil.svg);
   background-repeat: no-repeat;
   background-size: 80%;
 }
 .order {
+  width: 130px;
   font-size: 14px;
   background-color: #48b79f;
   padding: 12px;
@@ -5800,6 +5810,7 @@ a {
   background-repeat: none;
 }
 .basket {
+  width: 130px;
   font-size: 14px;
   background-color: #fc7279;
   border: none;
@@ -5857,11 +5868,11 @@ a {
   position: absolute;
   display: inline-block;
   content: '';
-  width: 15px;
-  height: 20px;
-  left: 7px;
+  width: 20px;
+  height: 30px;
+  left: 5px;
   top: 5px;
-  background-image: url(../img/geo_point.png);
+  background-image: url(../img/point--pink.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   color: #fc7279;
@@ -5879,7 +5890,7 @@ a {
   color: #fff;
 }
 .footer__time-mail {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .footer__mail {
   color: #fff;
@@ -5888,6 +5899,14 @@ a {
 .footer__socials-item {
   display: inline-block;
   margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.footer__socials-item img {
+  width: 15px;
+  height: 15px;
 }
 .footer__copyright {
   margin-top: 60px;
@@ -5993,15 +6012,17 @@ a {
 }
 .contacts {
   color: #333333;
+  margin-top: -40px;
 }
 .contacts__title {
+  margin-top: -10px;
   color: #456e72;
   font-size: 1.428em;
   line-height: 3.071em;
 }
 .contacts__item {
   padding: 0 15px;
-  padding-top: 20px;
+  padding-top: 10px;
   background-color: #fff;
 }
 .contacts__txt {
@@ -6023,7 +6044,7 @@ a {
   font-size: 1.571em;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-image: url(../img/geo_point.png);
+  background-image: url(../../img/point--pink.svg);
 }
 .contacts__tel {
   margin-bottom: 10px;
@@ -6033,18 +6054,24 @@ a {
 }
 .contacts__tel:first-of-type:before {
   top: 10px;
-  left: 0;
+  left: 4px;
   background-repeat: no-repeat;
-  background-image: url(../img/tel.png);
+  background-image: url(../../img/phone.svg);
 }
 .contacts__time {
   margin-bottom: 25px;
-  background-repeat: no-repeat;
-  background-image: url(../img/time.png);
 }
-.contacts__mail {
+.contacts__time:before {
+  width: 20px;
+  height: 20px;
+  left: 1px;
   background-repeat: no-repeat;
-  background-image: url(../img/email.png);
+  background-image: url(../../img/time.svg);
+}
+.contacts__mail:before {
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url(../../img/mail.svg);
 }
 .contacts__mail a {
   text-decoration: underline;
@@ -6055,15 +6082,21 @@ a {
   line-height: 1.428em;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+.contacts__subway:before {
+  left: 0;
   background-repeat: no-repeat;
-  background-image: url(../img/metro.png);
+  background-image: url(../../img/subway.svg);
 }
 .contacts__parking {
   font-size: 1em;
   line-height: 1.428em;
   margin-bottom: 25px;
+}
+.contacts__parking:before {
+  left: 1px;
   background-repeat: no-repeat;
-  background-image: url(../img/parking.png);
+  background-image: url(../../img/parking.svg);
 }
 .contacts__map {
   padding-right: 15px;
@@ -6361,10 +6394,17 @@ a {
 .product__txt--shifted {
   padding-left: 110px;
 }
+.product__description-table {
+  margin-top: -40px;
+  border-collapse: separate;
+  border-spacing: 0 30px;
+  border-bottom: 1px solid #48b79f;
+}
 .product__description-box {
-  display: inline-block;
-  margin-bottom: 50px;
+  border: 1px solid red;
+  margin-right: 30px;
   position: relative;
+  margin-bottom: 50px;
 }
 .product__description-box:last-child:after {
   content: '';
@@ -6381,40 +6421,57 @@ a {
   width: 40px;
 }
 .product__description-box label {
+  white-space: nowrap;
+  width: 25%;
   color: #456e72;
   font-weight: normal;
   font-size: 0.875em;
   margin-right: 35px;
 }
 .product__description-vol {
+  white-space: nowrap;
+  width: 15%;
   color: #333333;
   font-size: 1.143em;
   line-height: 1.428em;
   margin-right: 35px;
 }
 .product__description-price-old {
+  white-space: nowrap;
   color: #333333;
   text-decoration: line-through;
   position: absolute;
   top: -15px;
 }
+.product__price {
+  position: relative;
+  width: 33%;
+}
 .product__description-price-new {
+  white-space: nowrap;
   color: #fc7279;
   font-size: 1.714em;
   margin-right: 35px;
 }
+.product__table-btn {
+  text-align: right;
+}
 .product__question {
   float: right;
   text-align: right;
+  margin-top: 35px;
   padding-right: 20px;
 }
 .product__question-txt {
   color: #333333;
   font-size: 1em;
+  margin-top: -5px;
 }
 .product__question-tel {
   color: #456e72;
   font-size: 1.143em;
+  margin-top: -5px;
+  margin-bottom: 1px;
 }
 .product__question-mail {
   color: #333333;

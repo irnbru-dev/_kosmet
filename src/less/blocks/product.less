@@ -81,10 +81,18 @@
 		}
 	}
 
+	&__description-table {
+		margin-top: -40px;
+		border-collapse: separate;
+		border-spacing: 0 30px;
+		border-bottom: 1px solid @green;
+	}
+
 	&__description-box {
-		display: inline-block;
-		margin-bottom: 50px;
+		border: 1px solid red;
+		margin-right: 30px;
 		position: relative;
+		margin-bottom: 50px;
 		&:last-child:after {
 			content: '';
 			display: inline-block;
@@ -101,6 +109,8 @@
 			width: 40px;
 		}
 		label {
+			white-space: nowrap;
+			width: 25%;
 			color: @dark-green;
 			font-weight: normal;
 			font-size: 0.875em;
@@ -109,6 +119,8 @@
 	}
 
 	&__description-vol {
+		white-space: nowrap;
+		width: 15%;
 		color: @grey;
 		font-size: 1.143em;
 		line-height: 1.428em;
@@ -116,32 +128,48 @@
 	}
 
 	&__description-price-old {
+		white-space: nowrap;
 		color: @grey;
 		text-decoration: line-through;
 		position: absolute;
 		top: -15px;
 	}
 
+	&__price {
+		position: relative;
+		width: 33%;
+	}
+
 	&__description-price-new {
+		white-space: nowrap;
 		color: @pink;
 		font-size: 1.714em;
 		margin-right: 35px;
 	}
 
+	&__table-btn {
+		text-align: right;
+		// width: 100%;
+	}
+
 	&__question {
 		float: right;
 		text-align: right;
+		margin-top: 35px;
 		padding-right: 20px;
 	}
 
 	&__question-txt {
 		color: @grey;
 		font-size: 1em;
+		margin-top: -5px;
 	}
 
 	&__question-tel {
 		color: @dark-green;
 		font-size: 1.143em;
+		margin-top: -5px;
+		margin-bottom: 1px;
 	}
 
 	&__question-mail {

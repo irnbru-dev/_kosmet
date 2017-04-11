@@ -14,9 +14,24 @@
 	<div class="header__top">
 		<div class="header__inner container">
 			<div class="row">
-				<div class="col-md-offset-9 col-md-3">
-					<p class="header__top-bookmark">Закладки</p>
-					<p class="header__top-total">15 555 руб.</p>
+				<div class="col-md-9">
+					<div class="header__top-logo">
+						<img src="img/logo.svg" alt="LOGO">
+					</div>
+					<ul class="header__top-list">
+						<li class="header__top-item"><a class="header__top-link" href="#">Лицо</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Тело</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Эпиляция</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Флебология</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Домашний уход</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Акции</a></li>
+						<li class="header__top-item"><a class="header__top-link" href="#">Контакты</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-3">
+					<p class="header__top-bookmark">Закладки <span>12</span></p>
+					<p class="header__top-total"><span>99</span>15 555 руб.</p>
 				</div>
 			</div>
 		</div>
@@ -27,19 +42,19 @@
 			<div class="row">
 		
 			<div class="header__main-logo col-md-4">
-				<a href="#"><img src="img/main-logo.png" alt="Kosmet-LOGO"></a>
+				<a href="#"><img src="img/logo.svg" alt="Kosmet-LOGO"></a>
 				<p class="header__main-logo-txt">Центр Медицинской Косметологии</p>
 			</div>
 
 			<div class="header__contacts">
 				<div class="header__contact-box col-md-2">
-					<p class="header__contact-address">ул. Рубинштейна, д.26</p>
-					<p class="header__contact-tel">тел. +7(812) 314-78-32</p>
+					<a href="contacts.html" class="header__contact-address">ул. Рубинштейна, д.26</a>
+					<a href='+78123147832' class="header__contact-tel">тел. +7(812) 314-78-32</a>
 				</div>
 
 				<div class="header__contact-box col-md-3">
-					<p class="header__contact-address">Московский пр., д.73, к.3</p>
-					<p class="header__contact-tel">тел. +7(812) 327-67-17</p>
+					<a href="contacts.html" class="header__contact-address">Московский пр., д.73, к.3</a>
+					<a href='+78123276717' class="header__contact-tel">тел. +7(812) 327-67-17</a>
 				</div>
 
 				<div class="header__time-mail col-md-3">
@@ -136,7 +151,7 @@
 
 		<p class="product__description-txt">Специально разработанный состав лосьона позволяет ему стать незаменимым средством для лечения угревой болезни и уменьшения ее последствий.</p>
 
-		<div class="product__description-box">
+		<!-- <div class="product__description-box">
 			<span class="product__description-vol">50 мл.</span>
 			<label><input type="number">  шт.</label>
 			<span class="product__description-price-old">666 200 руб.</span>
@@ -150,7 +165,42 @@
 			<span class="product__description-price-old">13 000 руб.</span>
 			<span class="product__description-price-new">10 00 руб.</span>
 			<btn class="basket">В корзине</btn>
-		</div>
+		</div> -->
+
+
+		<table class="product__description-table">
+			<tr class="product__description-box">
+				<td>
+					<span class="product__description-vol">50 мл.</span>
+				</td>
+				<td>
+					<label><input type="number" placeholder="1">  шт.</label>
+				</td>
+				<td class="product__price">
+					<span class="product__description-price-old">666 200 </span>
+					<span class="product__description-price-new">555 600 </span>
+				</td>
+				<td class="product__table-btn">
+					<a href="#" class="order">Заказать</a>
+				</a>
+			</tr>
+
+			<tr class="product__description-box">
+				<td>
+					<span class="product__description-vol">125 мл.</span>
+				</td>
+				<td>
+					<label><input type="number" placeholder="99">  шт.</label>
+				</td>
+				<td class="product__price">
+					<span class="product__description-price-old">13 000 </span>
+					<span class="product__description-price-new">10 00 </span>
+				</td>
+				<td class="product__table-btn">
+					<a href="#" class="basket">В корзине</a>
+				</td>
+			</tr>
+		</table>
 
 		<div class="product__question">
 			<p class="product__question-txt">У вас есть вопросы? Звоните и мы все расскажем</p>
@@ -281,13 +331,13 @@
 					<p>Узнавайте первыми о новинках  и акциях.</p>
 					<div class="footer__socials-list">
 						<a href="#" class="footer__socials-item footer__socials-item--vk">
-							<img src="img/vk-white.png" alt="vk">
+							<img src="img/vk-white.svg" alt="vk">
 						</a>
 						<a href="#" class="footer__socials-item footer__socials-item--fb">
-							<img src="img/fb-white.png" alt="fb">
+							<img src="img/fb-white.svg" alt="fb">
 						</a>
 						<a href="#" class="footer__socials-item footer__socials-item--insta">
-							<img src="img/insta-white.png" alt="insta">
+							<img src="img/insta-white.svg" alt="insta">
 						</a>
 					</div>
 			</div>	
